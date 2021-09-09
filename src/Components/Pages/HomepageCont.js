@@ -18,7 +18,7 @@ function HomepageCont() {
     return (
         <Home>
             <Homelg >
-                <MDBCard style={{ maxWidth: '22rem' }}>
+                <MDBCard style={{ maxWidth: '22rem', margin: '20px' }}>
                     <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
                         <MDBCardImage src={Sarkodie} style={{maxHeight:"15rem",width:'22rem'}} fluid alt='...' />
                         <a>
@@ -75,7 +75,7 @@ function HomepageCont() {
                         </a>
                     </MDBRipple>
                     <MDBCardBody>
-                        <MDBCardTitle>Card title</MDBCardTitle>
+                        <MDBCardTitle>Black Sheriff: Second Sermon</MDBCardTitle>
                         <ReactAudioPlayer
                             src={SecondSermon}
                     

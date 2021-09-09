@@ -6,6 +6,7 @@ import HomepageCont from "./Components/Pages/HomepageCont";
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Contact from "./Components/Pages/BlankSpace";
 
 function App() {
   useEffect(() => {
@@ -17,6 +18,7 @@ function App() {
       <Header />
       <Homepage />
       <HomepageCont />
+      <Contact/>
     </Router>
 
   );

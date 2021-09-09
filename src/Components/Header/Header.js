@@ -2,6 +2,9 @@ import React from 'react'
 import { Container } from 'react-bootstrap'
 import { Navbar, NavLogo, NavItem, NavMenu, NavLinks } from '../styled-components/HeaderElements'
 import { HomeBg } from '../styled-components/HomePageElements'
+import{AiFillFacebook,AiOutlineInstagram} from 'react-icons/ai'
+import{GrTwitter} from 'react-icons/gr'
+
 import '../styled-components/NavbarBtn.scss'
 function Header() {
     return (
@@ -23,7 +26,7 @@ function Header() {
                         <NavLinks>
                              <div class="container">
                                 <div class="btn">
-                                    <span style={{color:'white'}}>About</span>
+                                    <span style={{color:'white'}}>News</span>
                                 </div>
                             </div>
                         </NavLinks>
@@ -33,6 +36,33 @@ function Header() {
                              <div class="container">
                                 <div class="btn">
                                     <span style={{color:'white'}}>Contact</span>
+                                </div>
+                            </div>
+                        </NavLinks>
+                    </NavMenu>
+                    <NavMenu>
+                        <NavLinks>
+                             <div class="container">
+                                <div class="btn">
+                                    <span style={{color:'white'}}><AiFillFacebook/></span>
+                                </div>
+                            </div>
+                        </NavLinks>
+                    </NavMenu>
+                    <NavMenu>
+                        <NavLinks>
+                             <div class="container">
+                                <div class="btn">
+                                    <span style={{color:'white'}}><GrTwitter/></span>
+                                </div>
+                            </div>
+                        </NavLinks>
+                    </NavMenu>
+                    <NavMenu>
+                        <NavLinks>
+                             <div class="container">
+                                <div class="btn">
+                                    <span style={{color:'white'}}><AiOutlineInstagram/></span>
                                 </div>
                             </div>
                         </NavLinks>

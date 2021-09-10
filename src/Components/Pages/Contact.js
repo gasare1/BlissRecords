@@ -10,8 +10,8 @@ class Contact extends Component {
     render() {
         return (
 
-           
-                <MDBRow style={{justifyContent:'center',backgroundColor:'black' ,color:'white'}}>
+            <div style={{ boxShadow: "0px -15px 10px -15px #fff" }}>
+                <MDBRow style={{ justifyContent: 'center', background:'black', color: 'white', }}>
                     <MDBCol md="6">
                         <form>
                             <p className="h5 text-center mb-4">Write to us</p>
@@ -24,7 +24,7 @@ class Contact extends Component {
                                 <MDBInput type="textarea" rows="2" label="Your message" icon="pencil-alt" />
                             </div>
                             <div className="text-center">
-                                <MDBBtn outline color="secondary">
+                                <MDBBtn outline color="secondary" style={{color:'white'}}>
                                     Send
                                     <MDBIcon far icon="paper-plane" className="ml-1" />
                                 </MDBBtn>
@@ -32,7 +32,8 @@ class Contact extends Component {
                         </form>
                     </MDBCol>
                 </MDBRow>
-            
+            </div>
+
 
         );
     }

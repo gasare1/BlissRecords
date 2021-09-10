@@ -8,20 +8,22 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Blank from './Components/Pages/BlankSpace'
 import Contact from "./Components/Pages/Contact";
-
+import image1 from './Images/goldbackground.jpg'
 function App() {
   useEffect(() => {
     AOS.init();
     AOS.refresh();
   }, []);
   return (
+    <div style={{background:`url(${image1})`}}>
     <Router>
-      <Header />
-      <Homepage />
-      <HomepageCont />
-      <Blank/>
-      <Contact/>
+      <Header  />
+      <Homepage  />
+      <HomepageCont  />
+      <Blank />
+      <Contact />
     </Router>
+    </div>
 
   );
 }

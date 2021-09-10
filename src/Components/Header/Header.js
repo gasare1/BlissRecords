@@ -29,7 +29,7 @@ function Header() {
     navRef.current = navBackground
     useEffect(() => {
       const handleScroll = () => {
-        const show = window.scrollY > 50
+        const show = window.scrollY > 100
         if (navRef.current !== show) {
           setNavBackground(show)
         }

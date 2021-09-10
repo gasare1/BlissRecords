@@ -5,6 +5,7 @@ margin-top:40px;
 width:100%;
 z-index:1;
 
+
 @media screen and(max-width:1080px){
  display:block;
  flex-direction:column;
@@ -20,6 +21,7 @@ justify-content:center;
 flex-direction:'row';
 flex-wrap:wrap;
 float:center;
+
 
 @media screen and(max-width:760px){
 

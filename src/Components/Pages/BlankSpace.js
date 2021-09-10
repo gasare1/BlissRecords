@@ -6,7 +6,7 @@ import { Home, Homelg } from '../styled-components/HomeCont'
 import { Container } from "react-bootstrap";
 const Blank = () => {
   return (
-    <Home style={{backgroundColor:'#000',marginTop:'-14rem',height:'500px'}}>
+    <Home style={{backgroundColor:'#fff',marginTop:'-14rem',height:'230px'}}>
       <Homelg >
       </Homelg >
     </Home>

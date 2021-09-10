@@ -1,0 +1,27 @@
+.shadow {
+  margin: 0 auto;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px;
+  
+  &.bottom {
+    box-shadow: 0px 15px 10px -15px #fff;    
+  }
+
+  }
+section{
+  -webkit-box-shadow: 0px 0px 8px 2px #444444;
+     -moz-box-shadow: 0px 0px 8px 2px #444444;
+          box-shadow: 0px 0px 8px 2px #444444;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media screen and(max-width:1080px){
+
+    display:block;
+    flex-direction:column;
+   }
+  }

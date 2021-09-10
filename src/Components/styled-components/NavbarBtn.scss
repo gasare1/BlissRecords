@@ -12,7 +12,17 @@ body {
     
     transform: translate(-50%, -50%);
 }
+.nav-toggler{
+    font-size: 1.7rem;
+    color: white;
+    float: right;
 
+    @media screen and (min-width:1024px){
+        display:none;
+     
+     }
+
+}
 .btn {
     color: #fff;
     border: 1px solid white;
@@ -64,4 +74,5 @@ body {
             transform: translate3d(0,0,0);
         }
     }
+
 }

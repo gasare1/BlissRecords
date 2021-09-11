@@ -10,10 +10,14 @@ import Blank from './Components/Pages/BlankSpace'
 import Contact from "./Components/Pages/Contact";
 import image1 from './Images/goldbackground.jpg'
 import ScrollToTop from "./ScrollToTop";
-function App() {
+
+
+
+const App = () => {
   useEffect(() => {
     AOS.init();
     AOS.refresh();
+    
   }, []);
   return (
     <div style={{background:' #D4AF37'}}>

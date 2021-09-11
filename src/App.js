@@ -10,6 +10,7 @@ import Blank from './Components/Pages/BlankSpace'
 import Contact from "./Components/Pages/Contact";
 import image1 from './Images/goldbackground.jpg'
 import ScrollToTop from "./ScrollToTop";
+import Footer from "./Components/Footer/Footer";
 
 
 
@@ -28,6 +29,7 @@ const App = () => {
       <HomepageCont  />
       <Blank />
       <Contact  path="/contact" component={Contact} exact/>
+      <Footer/>
     </Router>
     </div>
 

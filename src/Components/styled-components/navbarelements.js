@@ -113,7 +113,8 @@ transform:
 }
 `
 export const Burger = styled.button`
-
+cursor: pointer;
+background-image:url(${CgMenuLeft});
 color:
    ${p => p.isOpen ? 'black' : 'black'};
 
@@ -131,7 +132,7 @@ color:#fff;
 
 transform:
    translateY(
-   ${p => p.isOpen ? `${CgMenuLeft}` : `${FaTimes}`}
+   ${p => p.isOpen ? <CgMenuLeft/> : <CgMenuLeft/>}
    );
    transition: transform 0.45s;
 
@@ -155,8 +156,8 @@ margin:20px;
 display:flex;
 flex-direction:column;
 background-color:rgba(0, 0, 0, 0.822);
-border-bottom-left-radius:80px;
-border-bottom-right-radius:80px;
+border-bottom-left-radius:2rem;
+border-bottom-right-radius:2rem;
 height:100% ;
 color:white;
 margin-bottom:-99px;

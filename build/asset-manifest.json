@@ -1,26 +1,35 @@
 {
   "files": {
-    "main.css": "/static/css/main.6fdb0469.chunk.css",
-    "main.js": "/static/js/main.cc9c3a96.chunk.js",
-    "main.js.map": "/static/js/main.cc9c3a96.chunk.js.map",
+    "main.css": "/static/css/main.994c5808.chunk.css",
+    "main.js": "/static/js/main.8d12cdb2.chunk.js",
+    "main.js.map": "/static/js/main.8d12cdb2.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.38238bdc.js",
     "runtime-main.js.map": "/static/js/runtime-main.38238bdc.js.map",
-    "static/css/2.994be242.chunk.css": "/static/css/2.994be242.chunk.css",
-    "static/js/2.8452da8b.chunk.js": "/static/js/2.8452da8b.chunk.js",
-    "static/js/2.8452da8b.chunk.js.map": "/static/js/2.8452da8b.chunk.js.map",
+    "static/css/2.29c6ae1a.chunk.css": "/static/css/2.29c6ae1a.chunk.css",
+    "static/js/2.e270ed81.chunk.js": "/static/js/2.e270ed81.chunk.js",
+    "static/js/2.e270ed81.chunk.js.map": "/static/js/2.e270ed81.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/2.994be242.chunk.css.map": "/static/css/2.994be242.chunk.css.map",
-    "static/css/main.6fdb0469.chunk.css.map": "/static/css/main.6fdb0469.chunk.css.map",
-    "static/js/2.8452da8b.chunk.js.LICENSE.txt": "/static/js/2.8452da8b.chunk.js.LICENSE.txt",
+    "static/css/2.29c6ae1a.chunk.css.map": "/static/css/2.29c6ae1a.chunk.css.map",
+    "static/css/main.994c5808.chunk.css.map": "/static/css/main.994c5808.chunk.css.map",
+    "static/js/2.e270ed81.chunk.js.LICENSE.txt": "/static/js/2.e270ed81.chunk.js.LICENSE.txt",
+    "static/media/BlackSherrif.eb8f6314.jpg": "/static/media/BlackSherrif.eb8f6314.jpg",
+    "static/media/Davido-2.949efb2e.jpg": "/static/media/Davido-2.949efb2e.jpg",
+    "static/media/Fameye.7c266e7e.jpg": "/static/media/Fameye.7c266e7e.jpg",
+    "static/media/[BTCLOD.COM] Black Sherif - Second Sermon (Official Video)-320k.ae008c5d.mp3": "/static/media/[BTCLOD.COM] Black Sherif - Second Sermon (Official Video)-320k.ae008c5d.mp3",
+    "static/media/[BTCLOD.COM] Davido - Jowo (Official Audio)-320k.c6b012bf.mp3": "/static/media/[BTCLOD.COM] Davido - Jowo (Official Audio)-320k.c6b012bf.mp3",
+    "static/media/[BTCLOD.COM] Fameye - PRAISE (Audio Slide)-320k (1).eafd1e7a.mp3": "/static/media/[BTCLOD.COM] Fameye - PRAISE (Audio Slide)-320k (1).eafd1e7a.mp3",
+    "static/media/[BTCLOD.COM] Sarkodie - Rollies and Cigars (Official Music Video)-320k.f1077d75.mp3": "/static/media/[BTCLOD.COM] Sarkodie - Rollies and Cigars (Official Music Video)-320k.f1077d75.mp3",
     "static/media/backgroundvideo.9cbbeef3.mp4": "/static/media/backgroundvideo.9cbbeef3.mp4",
+    "static/media/goldbackground.ac4563d5.jpg": "/static/media/goldbackground.ac4563d5.jpg",
     "static/media/goldenrecord.dae48366.jpg": "/static/media/goldenrecord.dae48366.jpg",
-    "static/media/logo2.352a1b08.png": "/static/media/logo2.352a1b08.png"
+    "static/media/logo2.352a1b08.png": "/static/media/logo2.352a1b08.png",
+    "static/media/sarkodie.9b69f0c9.jpg": "/static/media/sarkodie.9b69f0c9.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.38238bdc.js",
-    "static/css/2.994be242.chunk.css",
-    "static/js/2.8452da8b.chunk.js",
-    "static/css/main.6fdb0469.chunk.css",
-    "static/js/main.cc9c3a96.chunk.js"
+    "static/css/2.29c6ae1a.chunk.css",
+    "static/js/2.e270ed81.chunk.js",
+    "static/css/main.994c5808.chunk.css",
+    "static/js/main.8d12cdb2.chunk.js"
   ]
 }

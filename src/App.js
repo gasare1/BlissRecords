@@ -23,7 +23,7 @@ function App() {
       <Homepage  />
       <HomepageCont  />
       <Blank />
-      <Contact  path="contact" component={Contact} exact/>
+      <Contact  path="/contact" component={Contact} exact/>
     </Router>
     </div>
 

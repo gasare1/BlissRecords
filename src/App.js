@@ -9,19 +9,21 @@ import "aos/dist/aos.css";
 import Blank from './Components/Pages/BlankSpace'
 import Contact from "./Components/Pages/Contact";
 import image1 from './Images/goldbackground.jpg'
+import ScrollToTop from "./ScrollToTop";
 function App() {
   useEffect(() => {
     AOS.init();
     AOS.refresh();
   }, []);
   return (
-    <div style={{background:`url(${image1})`}}>
+    <div style={{background:' #D4AF37'}}>
     <Router>
+     
       <Header  />
       <Homepage  />
       <HomepageCont  />
       <Blank />
-      <Contact />
+      <Contact  path="contact" component={Contact} exact/>
     </Router>
     </div>
 

@@ -72,10 +72,10 @@ function Header() {
                             </NavLinks>
                         </NavMenu>
                         <NavMenu>
-                            <NavLinks>
+                            <NavLinks to='contact'>
                                 <div class="container">
                                     <div class="btn">
-                                        <span style={{ color: 'white' }}>Contact</span>
+                                        <Link><span to='contact' style={{ color: 'white' }}>Contact</span></Link>
                                     </div>
                                 </div>
                             </NavLinks>

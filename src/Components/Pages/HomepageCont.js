@@ -32,7 +32,7 @@ function HomepageCont() {
                             <MDBCardTitle> Sarkodie: Rollies and Cigars</MDBCardTitle>
                             <ReactAudioPlayer
                                 src={Sark}
-                                autoPlay
+                                
                                 controls
                             />
                             We do not own the music in this video/rights to this music.

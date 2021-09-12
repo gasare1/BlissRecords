@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import { FaTimes} from 'react-icons/fa'
 import { CgMenuLeft } from 'react-icons/cg'
-const heightOfMenu = "500px"
+const heightOfMenu = "700px"
 
 export const NavItem = styled.ul`
 color:#fff;

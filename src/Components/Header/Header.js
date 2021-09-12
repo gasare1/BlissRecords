@@ -58,7 +58,7 @@ function Header() {
                             <NavLinks>
                                 <div class="container">
                                     <div class="btn">
-                                        <span style={{ color: 'white' }}>Home</span>
+                                        <span style={{ color: 'white',fontSize:'12px' }}>Home</span>
                                     </div>
                                 </div>
                             </NavLinks>
@@ -67,7 +67,7 @@ function Header() {
                             <NavLinks>
                                 <div class="container">
                                     <div class="btn">
-                                        <span style={{ color: 'white' }}>News</span>
+                                        <span style={{ color: 'white',fontSize:'12px' }}>News</span>
                                     </div>
                                 </div>
                             </NavLinks>
@@ -76,7 +76,7 @@ function Header() {
                             <NavLinks >
                                 <div class="container">
                                     <div class="btn">
-                                        <Link to='contact'><span to='contact' style={{ color: 'white' }}>Contact</span></Link>
+                                        <Link to='contact'><span to='contact' style={{ color: 'white',fontSize:'12px' }}>Contact</span></Link>
                                     </div>
                                 </div>
                             </NavLinks>
@@ -86,7 +86,7 @@ function Header() {
                                 <div class="container">
                                     <div class="btn">
 
-                                        <SocalLink to='https://facebook.com'> <a  target="_blank" href="https://valleycasa.com/preferred-lenders/" style={{ color: 'white' }}><AiFillFacebook /></a></SocalLink>
+                                        <SocalLink style={{ color: 'white',fontSize:'12px' }} to='https://facebook.com'> <a  target="_blank" href="https://valleycasa.com/preferred-lenders/" style={{ color: 'white' }}><AiFillFacebook /></a></SocalLink>
 
                                     </div>
                                 </div>
@@ -97,7 +97,7 @@ function Header() {
                                 <div class="container">
                                     <div class="btn">
                                         <a href="https://mobile.twitter.com/home" class="pull-left">
-                                            <span style={{ color: 'white' }}><GrTwitter /></span>
+                                            <span style={{ color: 'white',fontSize:'12px' }}><GrTwitter /></span>
                                         </a>
                                     </div>
 
@@ -109,7 +109,7 @@ function Header() {
                                 <div class="container">
                                     <div class="btn">
                                         <a href="https://www.instagram.com/" class="pull-left">
-                                            <span style={{ color: 'white' }}><AiOutlineInstagram /></span>
+                                            <span style={{ color: 'white',fontSize:'12px' }}><AiOutlineInstagram /></span>
                                         </a>
                                     </div>
                                 </div>

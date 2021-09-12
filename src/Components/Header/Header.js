@@ -82,6 +82,15 @@ function Header() {
                             </NavLinks>
                         </NavMenu>
                         <NavMenu>
+                            <NavLinks >
+                                <div class="container">
+                                    <div class="btn">
+                                        <Link to='contact'><span to='contact' style={{ color: 'white',fontSize:'12px' }}>About</span></Link>
+                                    </div>
+                                </div>
+                            </NavLinks>
+                        </NavMenu>
+                        <NavMenu>
                             <NavLinks>
                                 <div class="container">
                                     <div class="btn">
@@ -122,67 +131,10 @@ function Header() {
                                 <BurgerIcon isOpen={isOpen} onClick={() => setIsOpen(!isOpen)}>
                                     < FaTimes  > {isOpen ? "menu_open" : "menu"}</ FaTimes >
                                 </BurgerIcon>
-                                <NavMenu>
-                            <NavLinks>
-                                <div class="container">
-                                    <div class="btn">
-                                        <span style={{ color: 'white',fontSize:'12px' }}>Home</span>
-                                    </div>
-                                </div>
-                            </NavLinks>
-                        </NavMenu>
-                        <NavMenu>
-                            <NavLinks>
-                                <div class="container">
-                                    <div class="btn">
-                                        <span style={{ color: 'white',fontSize:'12px' }}>News</span>
-                                    </div>
-                                </div>
-                            </NavLinks>
-                        </NavMenu>
-                        <NavMenu>
-                            <NavLinks >
-                                <div class="container">
-                                    <div class="btn">
-                                        <Link to='contact'><span to='contact' style={{ color: 'white',fontSize:'12px' }}>Contact</span></Link>
-                                    </div>
-                                </div>
-                            </NavLinks>
-                        </NavMenu>
-                        <NavMenu>
-                            <NavLinks>
-                                <div class="container">
-                                    <div class="btn">
-
-                                    <span style={{ color: 'white',fontSize:'12px' }}><AiFillFacebook /></span>
-
-                                    </div>
-                                </div>
-                            </NavLinks>
-                        </NavMenu>
-                        <NavMenu>
-                            <NavLinks>
-                                <div class="container">
-                                    <div class="btn">
-                                        <a href="https://mobile.twitter.com/home" class="pull-left">
-                                            <span style={{ color: 'white',fontSize:'12px' }}><GrTwitter /></span>
-                                        </a>
-                                    </div>
-
-                                </div>
-                            </NavLinks>
-                        </NavMenu>
-                        <NavMenu>
-                            <NavLinks>
-                                <div class="container">
-                                    <div class="btn">
-                                        <a href="https://www.instagram.com/" class="pull-left">
-                                            <span style={{ color: 'white',fontSize:'12px' }}><AiOutlineInstagram /></span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </NavLinks>
-                        </NavMenu>
+                                <MenuButton  ><Link to='home' style={{ textDecoration: 'none', color: '#fff', margin: '20px' }} ><GiHouse /> Home</Link></MenuButton>
+                                <MenuButton ><Link to='contact' style={{ textDecoration: 'none', color: '#fff' }}> <MdEmail /> Contact Us</Link></MenuButton>
+                                <MenuButton  ><Link to='about' spy={true} style={{ textDecoration: 'none', color: '#fff' }}><BsFillQuestionCircleFill />About</Link></MenuButton>
+                                <MenuButton ><Link to='about' spy={true} style={{ textDecoration: 'none', ccolor: '#fff' }}><BsSearch />News</Link></MenuButton>
 
 
                             </Menu>

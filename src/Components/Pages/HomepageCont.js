@@ -20,7 +20,8 @@ function HomepageCont() {
         <Home>
             <Homelg style={{ boxShadow: "0px -15px 10px -15px #fff" }}>
                 <section>
-                    <MDBCard style={{ maxWidth: '22rem', margin: '20px' }} className='shadow bottom'>
+                    <MDBCard style={{ maxWidth: '22rem', margin: '20px' }} className='shadow bottom' data-aos="fade-up"
+                        data-aos-duration="3000">
                         <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
                             <MDBCardImage src={Sarkodie} style={{ maxHeight: "15rem", width: '22rem' }} fluid alt='...' />
                             <a>
@@ -37,7 +38,8 @@ function HomepageCont() {
                             We do not own the music in this video/rights to this music.
                         </MDBCardBody>
                     </MDBCard>
-                    <MDBCard style={{ maxWidth: '22rem', margin: '20px' }} className='shadow bottom'>
+                    <MDBCard style={{ maxWidth: '22rem', margin: '20px' }} className='shadow bottom' data-aos="fade-up"
+                        data-aos-duration="3000">
                         <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
                             <MDBCardImage src={Davido} style={{ maxHeight: "15rem", width: '22rem' }} fluid alt='...' />
                             <a>
@@ -53,7 +55,8 @@ function HomepageCont() {
                             We do not own the music in this video/rights to this music.
                         </MDBCardBody>
                     </MDBCard>
-                    <MDBCard style={{ maxWidth: '22rem', margin: '20px' }} className='shadow bottom'>
+                    <MDBCard style={{ maxWidth: '22rem', margin: '20px' }} className='shadow bottom' data-aos="fade-up"
+                        data-aos-duration="3000">
                         <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
                             <MDBCardImage src={Fameye} fluid alt='...' style={{ maxHeight: "15rem", width: '22rem' }} />
                             <a>
@@ -69,9 +72,10 @@ function HomepageCont() {
                             We do not own the music in this video/rights to this music.
                         </MDBCardBody>
                     </MDBCard>
-                    <MDBCard style={{ maxWidth: '22rem', margin: '20px' }} className='shadow bottom'>
+                    <MDBCard style={{ maxWidth: '22rem', margin: '20px' }} className='shadow bottom' data-aos="fade-up"
+                        data-aos-duration="3000">
                         <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
-                            <MDBCardImage src={BlackSherrif} style={{ maxHeight: "20rem", width: '22rem', height:'15rem' }} fluid alt='...' />
+                            <MDBCardImage src={BlackSherrif} style={{ maxHeight: "20rem", width: '22rem', height: '15rem' }} fluid alt='...' />
                             <a>
                                 <div className='mask' style={{ backgroundColor: 'rgba(251, 251, 251, 0.15)' }}></div>
                             </a>

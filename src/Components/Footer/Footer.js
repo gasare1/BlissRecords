@@ -34,7 +34,7 @@ function Footer() {
                             </div>
 
                             <div class="col-lg-4 col-md-6">
-                                <h3>latest Homes</h3>
+                                <h3>latest Albums</h3>
                                 <div class="media">
                                     <a href="#" class="pull-left">
                                         <img src="http://placehold.it/64x64" alt="" class="media-object" />

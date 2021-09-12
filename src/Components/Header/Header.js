@@ -86,7 +86,7 @@ function Header() {
                                 <div class="container">
                                     <div class="btn">
 
-                                        <SocalLink style={{ color: 'white',fontSize:'12px' }} to='https://facebook.com'> <a  target="_blank" href="https://valleycasa.com/preferred-lenders/" style={{ color: 'white' }}><AiFillFacebook /></a></SocalLink>
+                                    <span style={{ color: 'white',fontSize:'12px' }}><AiFillFacebook /></span>
 
                                     </div>
                                 </div>

@@ -78,7 +78,7 @@ function Footer() {
                         </div>
                     </div>
                     <div class="copyright text-center">
-                        Copyright &copy; 2021 <span>Bliss Records</span>
+                        <span>Copyright &copy; 2021 </span><span>Bliss Records</span>
                     </div>
                 </footer>
 

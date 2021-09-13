@@ -17,8 +17,8 @@ import { MdEmail } from 'react-icons/md'
 import { BiLogInCircle } from 'react-icons/bi'
 import { CgMenuLeft, CgMenuRight } from 'react-icons/cg'
 import { FaTimes } from 'react-icons/fa'
-import{Link as SocalLink} from 'react-router-dom'
-function Header() {
+import { Link as SocalLink } from 'react-router-dom'
+const Header = () => {
 
     const [isOpen, setIsOpen] = useState(false);
     const toggle = () => setIsOpen(!isOpen);
@@ -52,13 +52,14 @@ function Header() {
                 <Collapse isOpen={isOpen} navbar>
 
                     <CgMenuRight className='nav-toggler' onClick={toggle} />
+
                     <NavItem>
                         <Container><NavLogo /></Container>
                         <NavMenu>
                             <NavLinks>
                                 <div class="container">
                                     <div class="btn">
-                                        <span style={{ color: 'white',fontSize:'12px' }}>Home</span>
+                                        <span style={{ color: 'white', fontSize: '12px' }}>Home</span>
                                     </div>
                                 </div>
                             </NavLinks>
@@ -67,7 +68,7 @@ function Header() {
                             <NavLinks>
                                 <div class="container">
                                     <div class="btn">
-                                        <span style={{ color: 'white',fontSize:'12px' }}>News</span>
+                                        <span style={{ color: 'white', fontSize: '12px' }}>News</span>
                                     </div>
                                 </div>
                             </NavLinks>
@@ -76,7 +77,7 @@ function Header() {
                             <NavLinks >
                                 <div class="container">
                                     <div class="btn">
-                                        <Link to='contact'><span to='contact' style={{ color: 'white',fontSize:'12px' }}>Contact</span></Link>
+                                        <Link to='contact'><span to='contact' style={{ color: 'white', fontSize: '12px' }}>Contact</span></Link>
                                     </div>
                                 </div>
                             </NavLinks>
@@ -85,7 +86,7 @@ function Header() {
                             <NavLinks >
                                 <div class="container">
                                     <div class="btn">
-                                        <Link to='contact'><span to='contact' style={{ color: 'white',fontSize:'12px' }}>About</span></Link>
+                                        <Link to='contact'><span to='contact' style={{ color: 'white', fontSize: '12px' }}>About</span></Link>
                                     </div>
                                 </div>
                             </NavLinks>
@@ -95,7 +96,7 @@ function Header() {
                                 <div class="container">
                                     <div class="btn">
 
-                                    <span style={{ color: 'white',fontSize:'12px' }}><AiFillFacebook /></span>
+                                        <span style={{ color: 'white', fontSize: '12px' }}><AiFillFacebook /></span>
 
                                     </div>
                                 </div>
@@ -106,7 +107,7 @@ function Header() {
                                 <div class="container">
                                     <div class="btn">
                                         <a href="https://mobile.twitter.com/home" class="pull-left">
-                                            <span style={{ color: 'white',fontSize:'12px' }}><GrTwitter /></span>
+                                            <span style={{ color: 'white', fontSize: '12px' }}><GrTwitter /></span>
                                         </a>
                                     </div>
 
@@ -118,7 +119,7 @@ function Header() {
                                 <div class="container">
                                     <div class="btn">
                                         <a href="https://www.instagram.com/" class="pull-left">
-                                            <span style={{ color: 'white',fontSize:'12px' }}><AiOutlineInstagram /></span>
+                                            <span style={{ color: 'white', fontSize: '12px' }}><AiOutlineInstagram /></span>
                                         </a>
                                     </div>
                                 </div>

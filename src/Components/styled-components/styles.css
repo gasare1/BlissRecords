@@ -1,0 +1,15 @@
+.News {
+    display: flex;
+    justify-content: space-around;
+    font-family: sans-serif;
+    text-align: center;
+    padding-top: 40px;
+    flex-direction: row;
+    
+  }
+  
+  .time {
+    font-size: 32px;
+    flex-direction: row;
+  }
+  

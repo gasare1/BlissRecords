@@ -11,6 +11,7 @@ import Contact from "./Components/Pages/Contact";
 import image1 from './Images/goldbackground.jpg'
 import ScrollToTop from "./ScrollToTop";
 import Footer from "./Components/Footer/Footer";
+import News from "./Components/Pages/News";
 
 
 
@@ -18,19 +19,20 @@ const App = () => {
   useEffect(() => {
     AOS.init();
     AOS.refresh();
-    
+
   }, []);
   return (
-    <div style={{background:' #D4AF37'}}>
-    <Router>
-     
-      <Header  />
-      <Homepage  />
-      <HomepageCont  />
-      <Blank />
-      <Contact  path="/contact" component={Contact} exact/>
-      <Footer/>
-    </Router>
+    <div >
+      <Router>
+
+        <Header />
+        <Homepage />
+        <HomepageCont />
+        <Blank />
+        <News />
+        <Contact  path="/contact" component={Contact} exact />
+        <Footer  style={{ background: ' #000' }} />
+      </Router>
     </div>
 
   );

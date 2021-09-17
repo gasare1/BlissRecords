@@ -1,43 +1,45 @@
 import { BrowserRouter } from "react-router-dom";
 import Header from "./Components/Header/Header";
-import { BrowserRouter as Router } from 'react-router-dom'
+import { BrowserRouter as Router, Switch,Route } from "react-router-dom";
 import Homepage from "./Components/Pages/Homepage";
 import HomepageCont from "./Components/Pages/HomepageCont";
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Blank from './Components/Pages/BlankSpace'
+import Blank from "./Components/Pages/BlankSpace";
 import Contact from "./Components/Pages/Contact";
-import image1 from './Images/goldbackground.jpg'
+import image1 from "./Images/goldbackground.jpg";
 import ScrollToTop from "./ScrollToTop";
 import Footer from "./Components/Footer/Footer";
 import News from "./Components/Pages/News";
 import MailingList from "./Components/Pages/MailingList";
-
-
+import Blanks from "./Components/Pages/blaks";
 
 const App = () => {
   useEffect(() => {
     AOS.init();
     AOS.refresh();
-
   }, []);
   return (
-    <div >
+    <div>
       <Router>
-
-        <Header />
-        <Homepage  path="/home" component={Homepage} exact />
-        <HomepageCont  path="/home" component={Homepage} exact />
-        <Blank />
-        <News path="/news" component={Homepage} exact  />
-        <Contact  path="/contact" component={Contact} exact />
-        <MailingList/>
-        <Footer  style={{ background: ' #000' }} />
+        <Switch>
+      
+            <Route>
+            <Header />
+            <Homepage path="/home" component={Homepage} exact />
+            <HomepageCont />
+            <News path="/news" component={News} exact />
+            <Contact path="/contact" component={Contact} exact />
+            <MailingList path="/maillist" component={MailingList} exact />
+   
+            <Footer style={{ background: " #000" }} />
+            </Route>
+  
+        </Switch>
       </Router>
     </div>
-
   );
-}
+};
 
 export default App;

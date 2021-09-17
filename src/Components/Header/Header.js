@@ -99,7 +99,7 @@ const Header = () => {
             <NavMenu>
               <NavLinks>
                 <div class="container">
-                  <Link to="contact">
+                  <Link to="news">
                     <div class="btn">
                       <span style={{ color: "white", fontSize: "12px" }}>
                         News
@@ -129,12 +129,12 @@ const Header = () => {
               <NavLinks>
                 <div class="container">
                   <div class="btn">
-                    <Link to="contact">
+                    <Link to="maillist">
                       <span
-                        to="contact"
+                        to="maillist"
                         style={{ color: "white", fontSize: "12px" }}
                       >
-                        About
+                        SignUp
                       </span>
                     </Link>
                   </div>

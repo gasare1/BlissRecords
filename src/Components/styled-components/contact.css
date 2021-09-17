@@ -1,5 +1,15 @@
 .card {
     width: 500px;
     max-width: 100%;
+    
   }
+.contactbackground{
+  background: no-repeat center center fixed; 
+  background-image: url(../../Images/contactbackground.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 900px;
   
+}

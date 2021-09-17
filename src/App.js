@@ -12,6 +12,7 @@ import image1 from './Images/goldbackground.jpg'
 import ScrollToTop from "./ScrollToTop";
 import Footer from "./Components/Footer/Footer";
 import News from "./Components/Pages/News";
+import MailingList from "./Components/Pages/MailingList";
 
 
 
@@ -31,6 +32,7 @@ const App = () => {
         <Blank />
         <News path="/news" component={Homepage} exact  />
         <Contact  path="/contact" component={Contact} exact />
+        <MailingList/>
         <Footer  style={{ background: ' #000' }} />
       </Router>
     </div>

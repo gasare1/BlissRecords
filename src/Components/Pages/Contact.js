@@ -1,5 +1,6 @@
 import React from "react";
 import '../styled-components/contact.css'
+import image1 from '../../Images/pexels-vlad-bagacian-1337753.jpg'
 class Contact extends React.Component {
   
     constructor(props) {
@@ -86,7 +87,7 @@ class Contact extends React.Component {
         
       return (
   <>
-  <div id="contact" className="card shadow-sm border-0 px-3 rounded-2 mb-3 py-4 mx-auto mt-5 bg-light" style={{backgroundColor:'black'}}>
+  <div id="contact" className="card shadow-sm border-0 px-3 rounded-2 mb-3 py-4 mx-auto mt-5 bg-light" style={{backgroundImage:`url(${image1})`, color:'white'}}>
     <div className="card-header bg-transparent border-0 text-center text-uppercase"><h3>{this.props.title}</h3></div>
     <div className="card-body">
       <form action="/" onSubmit={(e) => this.handleSubmit(e)} encType="multipart/form-data" autoComplete="off">

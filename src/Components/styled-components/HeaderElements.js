@@ -18,6 +18,7 @@ background-position: 50% 50%;
 background-repeat:   no-repeat;
 background-size:     cover;
 margin-left: 45rem;
+margin-top:50px;
 cursor: pointer;
 @media (max-width: 1080px) {
     justify-content:center;
@@ -40,9 +41,9 @@ display:flex;
 
 
 `
-export const NavLinks = styled(Link)`
+export const NavLinks = styled.div`
 text-decoration:none;
-margin:40px;
+margin:0px;
 font-size:20px;
 font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 color:white;

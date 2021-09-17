@@ -12,7 +12,7 @@ function Homepage() {
     AOS.init();
     return (
         <>
-            <Home >
+            <Home id="home">
                 <HomeBackground src={video1} className='videoTag' autoPlay loop muted type='video/mp4' style={{ zIndex: '-99' }} />
                 <p style={{ marginTop: '-40rem', zIndex: '99' }}>Home</p>
                 <HomeBg data-aos="fade-up"

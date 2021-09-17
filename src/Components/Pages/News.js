@@ -35,7 +35,7 @@ export default function News() {
     const daysDuration = days * daySeconds;
 
     return (
-        <div className="News" >
+        <div className="News" id="news">
                 <h1 className="News">Song Release Date</h1>
                 <CountdownCircleTimer
                     {...timerProps}

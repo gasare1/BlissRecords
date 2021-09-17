@@ -17,7 +17,7 @@ import SecondSermon from '../../Audio/[BTCLOD.COM] Black Sherif - Second Sermon 
 import '../styled-components/musicplayercard.scss'
 function HomepageCont() {
     return (
-        <Home>
+        <Home id="home">
             <Homelg style={{ boxShadow: "0px -15px 10px -15px #fff" }}>
                 <section>
                     <MDBCard style={{ maxWidth: '22rem', margin: '20px' }} className='shadow bottom' data-aos="fade-up"

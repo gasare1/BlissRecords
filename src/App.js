@@ -26,10 +26,10 @@ const App = () => {
       <Router>
 
         <Header />
-        <Homepage />
-        <HomepageCont />
+        <Homepage  path="/home" component={Homepage} exact />
+        <HomepageCont  path="/home" component={Homepage} exact />
         <Blank />
-        <News />
+        <News path="/news" component={Homepage} exact  />
         <Contact  path="/contact" component={Contact} exact />
         <Footer  style={{ background: ' #000' }} />
       </Router>

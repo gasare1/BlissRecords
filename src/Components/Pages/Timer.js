@@ -55,10 +55,10 @@ class Countdown extends React.Component {
     }
 
     return (
-      <div style={{marginTop:'40px'}}>
+      <div style={{marginTop:'40px',marginRight:'60px'}}>
         <MDBCard
           style={{
-            maxWidth: "500rem",
+            maxWidth: "100rem",
             margin: "20px",
             justifyContent: "center",
             alignItems: "center",
@@ -99,11 +99,11 @@ class Countdown extends React.Component {
           </h1>
           <div className="countdown-wrapper">
             {days && (
-              <div className="countdown-item" style={{ marginTop: "40px" }}>
+              <div className="countdown-item" style={{ marginTop: "40px",justifyContent:'center',alignContent:'center',display:'flex',margin:'40px' }}>
                 <SVGCircle
                   radius={daysRadius}
                   style={{
-                    fontSize: "20px",
+                    fontSize: "10px",
                     fontWeight: "bolder",
                     marginTop: "20px",
                   }}
@@ -111,33 +111,18 @@ class Countdown extends React.Component {
 
                 <span
                   style={{
-                    fontSize: "40px",
+                    fontSize: "20px",
                     fontWeight: "bolder",
-                    color: "red",
+                    color:'linear-gradient( 90.3deg,  rgba(255,255,255,1) 3%, rgba(235,158,98,1) 34.6%, rgba(177,10,10,1) 63.7%, rgba(0,0,0,1) 102% )',
                     fontFamily: "Grechen Fuemen, cursive",
                   }}
                 >
                   {" "}
-                  {days} days
+                  {days} :{hours} :{minutes} :{seconds}
                 </span>
               </div>
             )}
-            {hours && (
-              <div className="countdown-item1">
-                <SVGCircle1 radius={hoursRadius} style={{ color: "red" }} />
-
-                <span
-                  style={{
-                    fontSize: "40px",
-                    fontWeight: "bolder",
-                    color: "gold",
-                    fontFamily: "Grechen Fuemen, cursive",
-                  }}
-                >
-                  {hours} hours
-                </span>
-              </div>
-            )}
+            
           </div>
           <AudioPlayer
               style={{marginTop:'-40px'}}
@@ -165,7 +150,7 @@ const SVGCircle = ({ radius }) => (
   <svg className="countdown-svg">
     <path
       fill="none"
-      stroke="red"
+      stroke="#FF416C"
       stroke-width="4"
       d={describeArc(50, 50, 48, 0, radius)}
     />
@@ -176,7 +161,7 @@ const SVGCircle1 = ({ radius }) => (
     <path
       fill="none"
       stroke="gold"
-      stroke-width="4"
+      stroke-width="2"
       d={describeArc(50, 50, 48, 0, radius)}
     />
   </svg>

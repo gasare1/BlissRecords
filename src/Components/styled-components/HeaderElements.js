@@ -8,7 +8,7 @@ height:90px;
 position: sticky;
 top: 10; // or whatever you have
 z-index: 1;
-
+width:100vw;
 
 `
 export const NavLogo = styled.div`

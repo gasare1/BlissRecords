@@ -218,26 +218,26 @@ const Header = () => {
                     style={{ textDecoration: "none", color: "#fff" }}
                   >
                     {" "}
-                    <MdEmail /> Contact Us
+                    <BsSearch /> Contact Us
                   </Link>
                 </MenuButton>
                 <MenuButton>
                   <Link
-                    to="about"
+                    to="maillist"
                     spy={true}
                     style={{ textDecoration: "none", color: "#fff" }}
                   >
-                    <BsFillQuestionCircleFill />
-                    About
+                    <MdEmail />
+                    SignUp
                   </Link>
                 </MenuButton>
                 <MenuButton>
                   <Link
-                    to="about"
+                    to="news"
                     spy={true}
                     style={{ textDecoration: "none", ccolor: "#fff" }}
                   >
-                    <BsSearch />
+                    <BsFillQuestionCircleFill />
                     News
                   </Link>
                 </MenuButton>

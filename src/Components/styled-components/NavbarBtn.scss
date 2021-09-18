@@ -25,7 +25,7 @@ body {
 
 }
 .nav-toggler:hover{
-    color: #07070700;
+    color: #75610a;
 }
 .btn {
     color: #fff;
@@ -55,14 +55,15 @@ body {
     
     &:before {
         transform: translate3d(-100%, 0, 0);
-        background-color: white;
+        background-color: rgba(0, 0, 0, 0.425);
+        text-decoration: underline;
         
         
         transition: transform 300ms ease-in-cubic;
     }
     
     &:after {
-        background-color:#A38A00;
+        color:#fff;
         
         transform: translate3d(100%, 0, 0);
         

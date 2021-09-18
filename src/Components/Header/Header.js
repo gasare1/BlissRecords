@@ -86,7 +86,7 @@ const Header = () => {
                 <div class="container">
                   <Link to="home" duration={1000}>
                     <div class="btn">
-                      <AnchorLink  style={{ color: "white", fontSize: "14px" }} to="home" >HOME</AnchorLink>
+                      <AnchorLink  style={{ color: "white", fontSize: "12px" }} to="home" >HOME</AnchorLink>
                     </div>
                   </Link>
                 </div>
@@ -101,7 +101,7 @@ const Header = () => {
                   >
                     <div class="btn">
                       
-                      <AnchorLink  style={{ color: "white", fontSize: "14px" }} to="news" >NEWS</AnchorLink>
+                      <AnchorLink  style={{ color: "white", fontSize: "12px" }} to="news" >NEWS</AnchorLink>
                     </div>
                   </Link>
                 </div>
@@ -112,7 +112,7 @@ const Header = () => {
                 <div class="container">
                   <Link to="contact" duration={1000}>
                     <div class="btn">
-                    <AnchorLink  style={{ color: "white", fontSize: "14px" }} to="contact" >CONTACT</AnchorLink>
+                    <AnchorLink  style={{ color: "white", fontSize: "12px" }} to="contact" >CONTACT</AnchorLink>
                     </div>
                   </Link>
                 </div>
@@ -123,7 +123,7 @@ const Header = () => {
                 <div class="container">
                   <Link to="maillist" duration={1000}>
                     <div class="btn">
-                    <AnchorLink  style={{ color: "white", fontSize: "14px" }} to="mailist" >SIGNUP</AnchorLink>
+                    <AnchorLink  style={{ color: "white", fontSize: "12px" }} to="maillist" >SIGNUP</AnchorLink>
                     </div>
                   </Link>
                 </div>

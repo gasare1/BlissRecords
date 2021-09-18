@@ -7,13 +7,16 @@ import {
   MDBIcon,
   MDBInput,
 } from "mdbreact";
+import image1 from '../../Images/contactbackground.jpg'
+import '../styled-components/contact.css'
+import '@fortawesome/fontawesome-free/css/all.min.css'; 
 
 const Contact = () => {
   return (
-    <MDBContainer>
-      <MDBRow>
-        <MDBCol md="6">
-          <form>
+
+      <MDBRow id='contact' className="contactbackground" style={{justifyContent:'center',textAlign:'center',alignItems: 'center',display:'flex',backgroundImage:`url(${image1})`, color:'white'}}>
+        <MDBCol md="4">
+          <form >
             <p className="h5 text-center mb-4">Write to us</p>
             <div className="grey-text">
               <MDBInput
@@ -51,7 +54,7 @@ const Contact = () => {
               />
             </div>
             <div className="text-center">
-              <MDBBtn outline color="secondary">
+              <MDBBtn outline color="secondary" style={{color:'white',marginTop:'12px'}}>
                 Send
                 <MDBIcon far icon="paper-plane" className="ml-1" />
               </MDBBtn>
@@ -59,7 +62,7 @@ const Contact = () => {
           </form>
         </MDBCol>
       </MDBRow>
-    </MDBContainer>
+
   );
 };
 

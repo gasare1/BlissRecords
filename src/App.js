@@ -13,7 +13,7 @@ import ScrollToTop from "./ScrollToTop";
 import Footer from "./Components/Footer/Footer";
 import News from "./Components/Pages/News";
 import MailingList from "./Components/Pages/MailingList";
-import Blanks from "./Components/Pages/blaks";
+import Blanks from "./Components/Pages/News";
 
 const App = () => {
   useEffect(() => {

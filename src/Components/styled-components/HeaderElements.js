@@ -31,6 +31,11 @@ cursor: pointer;
     margin:auto;
     margin-top:15%;
   }
+  @media (max-width: 1480px) {
+    margin-left:40px;
+    margin-top:60px;
+  
+  }
 `
 
 export const NavMenu = styled.div`
@@ -43,6 +48,7 @@ align-items:center;
 display:flex;
 @media (max-width: 1480px) {
     max-width:900px;
+    margin-left:50px;
   
   }
 
@@ -50,6 +56,7 @@ display:flex;
 
 `
 export const NavLinks = styled.div`
+margin-left:50px;
 text-decoration:none;
 margin:0px;
 font-size:20px;

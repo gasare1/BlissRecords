@@ -3,7 +3,10 @@ import { MailingHP, MailText } from "../styled-components/mailingelements";
 import { TextField, Button } from "@material-ui/core";
 import "../styled-components/maillist.css";
 import { makeStyles } from "@material-ui/core/styles";
+import "animate.css/animate.min.css";
+import ScrollAnimation from "react-animate-on-scroll";
 import image from "../../Images/mailist.jpg";
+import Scrolltext from "./Scrolltext";
 const useStyles = makeStyles({
   root: {
     "& .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline": {
@@ -57,7 +60,7 @@ export default function MailingList() {
           id="firstfield"
           style={{
             color: "white",
-            
+
             marginTop: "20rem",
             height: "85px",
           }}
@@ -80,6 +83,7 @@ export default function MailingList() {
         >
           SIGN UP
         </Button>
+       <Scrolltext/>
       </MailText>
     </MailingHP>
   );

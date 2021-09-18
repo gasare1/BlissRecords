@@ -128,16 +128,16 @@ const Header = () => {
             <NavMenu>
               <NavLinks>
                 <div class="container">
-                  <div class="btn">
-                    <Link to="maillist">
+                  <Link to="maillist">
+                    <div class="btn">
                       <span
                         to="maillist"
                         style={{ color: "white", fontSize: "12px" }}
                       >
                         SignUp
                       </span>
-                    </Link>
-                  </div>
+                    </div>
+                  </Link>
                 </div>
               </NavLinks>
             </NavMenu>
@@ -146,8 +146,9 @@ const Header = () => {
                 <div class="container">
                   <div class="btn">
                     <span style={{ color: "white", fontSize: "20px" }}>
-                    <a href='https://facebook.com'><AiFillFacebook /></a>
-                      
+                      <a href="https://facebook.com">
+                        <AiFillFacebook />
+                      </a>
                     </span>
                   </div>
                 </div>
@@ -159,8 +160,9 @@ const Header = () => {
                   <div class="btn">
                     <a href="https://mobile.twitter.com/home" class="pull-left">
                       <span style={{ color: "white", fontSize: "20px" }}>
-                      <a  href='https://twitter.com'><GrTwitter /></a>
-                      
+                        <a href="https://twitter.com">
+                          <GrTwitter />
+                        </a>
                       </span>
                     </a>
                   </div>
@@ -173,8 +175,16 @@ const Header = () => {
                   <div class="btn">
                     <a href="https://www.instagram.com/" class="pull-left">
                       <span style={{ color: "white", fontSize: "20px" }}>
-                      <a classNae='instagram' style={{background:' radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)'}} href='https://instagram.com'><AiOutlineInstagram /></a>
-                        
+                        <a
+                          classNae="instagram"
+                          style={{
+                            background:
+                              " radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)",
+                          }}
+                          href="https://instagram.com"
+                        >
+                          <AiOutlineInstagram />
+                        </a>
                       </span>
                     </a>
                   </div>

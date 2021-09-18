@@ -72,7 +72,7 @@ export default function MailingList() {
         <Button
           id="textfield"
           style={{
-            color: "white",
+            color: "black",
             marginTop: "19.8rem",
             marginLeft: "10px",
             height: "59px",

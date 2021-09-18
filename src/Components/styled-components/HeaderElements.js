@@ -8,6 +8,10 @@ height:90px;
 position: sticky;
 top: 10; // or whatever you have
 z-index: 1;
+@media (max-width: 1480px) {
+    max-width:2100px;
+  
+  }
 
 `
 export const NavLogo = styled.div`
@@ -37,6 +41,10 @@ export const NavItem = styled.ul`
 justify-content:center;
 align-items:center;
 display:flex;
+@media (max-width: 1480px) {
+    max-width:900px;
+  
+  }
 
 
 

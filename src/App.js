@@ -29,9 +29,9 @@ const App = () => {
             <Header />
             <Homepage path="/home" component={Homepage} exact />
             <HomepageCont />
-            <News path="/news" component={News} exact />
-            <Contact path="/contact" component={Contact} exact />
-            <MailingList path="/maillist" component={MailingList} exact />
+            <News path="/news" component={News}/>
+            <Contact path="/contact" component={Contact}/>
+            <MailingList path="/maillist" component={MailingList}/>
    
             <Footer style={{ background: " #000" }} />
             </Route>

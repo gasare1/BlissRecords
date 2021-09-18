@@ -10401,6 +10401,11 @@ rc-util@^5.0.0, rc-util@^5.0.1, rc-util@^5.2.1, rc-util@^5.3.0, rc-util@^5.5.0:
     react-is "^16.12.0"
     shallowequal "^1.1.0"
 
+react-anchor-link-smooth-scroll@^1.0.12:
+  version "1.0.12"
+  resolved "https://registry.yarnpkg.com/react-anchor-link-smooth-scroll/-/react-anchor-link-smooth-scroll-1.0.12.tgz#5cd49c73e74be6d20b4c05a5e5c72d07ebbedac7"
+  integrity sha512-aaY+9X0yh8YnC0jBfoTKpsiCLdO/Y6pCltww+VB+NnTBPDOvnIdnp1AlazajsDitc1j+cVSQ+yNtaVeTIMQbxw==
+
 react-animate-on-scroll@^2.1.5:
   version "2.1.5"
   resolved "https://registry.yarnpkg.com/react-animate-on-scroll/-/react-animate-on-scroll-2.1.5.tgz#c35ff5b19452b23270c7a42329b8dc391f273020"

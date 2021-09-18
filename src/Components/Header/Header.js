@@ -10,6 +10,7 @@ import {
 import { HomeBg } from "../styled-components/HomePageElements";
 import { AiFillFacebook, AiOutlineInstagram } from "react-icons/ai";
 import { GrTwitter } from "react-icons/gr";
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 import {
   NavLink,
   Nav,
@@ -23,9 +24,8 @@ import {
   MenuButton,
   BurgerIcon,
 } from "../styled-components/navbarelements";
-import { RiMenuFoldLine } from "react-icons/ri";
 import "../styled-components/NavbarBtn.scss";
-import { Link } from "react-scroll";
+import { Link, animateScroll as scroll } from "react-scroll";
 import {
   BsHouseDoorFill,
   BsFillQuestionCircleFill,
@@ -36,7 +36,6 @@ import { MdEmail } from "react-icons/md";
 import { BiLogInCircle } from "react-icons/bi";
 import { CgMenuLeft, CgMenuRight } from "react-icons/cg";
 import { FaTimes } from "react-icons/fa";
-import { Link as SocalLink } from "react-router-dom";
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
@@ -80,19 +79,14 @@ const Header = () => {
           <CgMenuRight className="nav-toggler" onClick={toggle} />
           <NavLogo />
           <NavItem>
-            <Container>
-              
-            </Container>
-            
+            <Container></Container>
+
             <NavMenu>
-                
               <NavLinks>
                 <div class="container">
-                  <Link to="home">
+                  <Link to="home" duration={1000}>
                     <div class="btn">
-                      <span style={{ color: "white", fontSize: "12px" }}>
-                        Home
-                      </span>
+                      <AnchorLink  style={{ color: "white", fontSize: "14px" }} to="home" >HOME</AnchorLink>
                     </div>
                   </Link>
                 </div>
@@ -101,11 +95,13 @@ const Header = () => {
             <NavMenu>
               <NavLinks>
                 <div class="container">
-                  <Link to="news">
+                  <Link
+                    to="news"
+                    
+                  >
                     <div class="btn">
-                      <span style={{ color: "white", fontSize: "12px" }}>
-                        News
-                      </span>
+                      
+                      <AnchorLink  style={{ color: "white", fontSize: "14px" }} to="news" >NEWS</AnchorLink>
                     </div>
                   </Link>
                 </div>
@@ -114,14 +110,9 @@ const Header = () => {
             <NavMenu>
               <NavLinks>
                 <div class="container">
-                  <Link to="contact">
+                  <Link to="contact" duration={1000}>
                     <div class="btn">
-                      <span
-                        to="contact"
-                        style={{ color: "white", fontSize: "12px" }}
-                      >
-                        Contact
-                      </span>
+                    <AnchorLink  style={{ color: "white", fontSize: "14px" }} to="contact" >CONTACT</AnchorLink>
                     </div>
                   </Link>
                 </div>
@@ -130,14 +121,9 @@ const Header = () => {
             <NavMenu>
               <NavLinks>
                 <div class="container">
-                  <Link to="maillist">
+                  <Link to="maillist" duration={1000}>
                     <div class="btn">
-                      <span
-                        to="maillist"
-                        style={{ color: "white", fontSize: "12px" }}
-                      >
-                        SignUp
-                      </span>
+                    <AnchorLink  style={{ color: "white", fontSize: "14px" }} to="mailist" >SIGNUP</AnchorLink>
                     </div>
                   </Link>
                 </div>
@@ -202,6 +188,7 @@ const Header = () => {
                 </BurgerIcon>
                 <MenuButton>
                   <Link
+                    duration={1000}
                     to="home"
                     style={{
                       textDecoration: "none",
@@ -214,6 +201,7 @@ const Header = () => {
                 </MenuButton>
                 <MenuButton>
                   <Link
+                    duration={1000}
                     to="contact"
                     style={{ textDecoration: "none", color: "#fff" }}
                   >
@@ -223,6 +211,7 @@ const Header = () => {
                 </MenuButton>
                 <MenuButton>
                   <Link
+                    duration={1000}
                     to="maillist"
                     spy={true}
                     style={{ textDecoration: "none", color: "#fff" }}
@@ -233,6 +222,7 @@ const Header = () => {
                 </MenuButton>
                 <MenuButton>
                   <Link
+                    duration={1000}
                     to="news"
                     spy={true}
                     style={{ textDecoration: "none", ccolor: "#fff" }}

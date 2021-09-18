@@ -32,8 +32,7 @@ const App = () => {
             <News path="/news" component={News}/>
             <Contact path="/contact" component={Contact}/>
             <MailingList path="/maillist" component={MailingList}/>
-   
-            <Footer style={{ background: " #000" }} />
+            <Footer />
             </Route>
   
         </Switch>

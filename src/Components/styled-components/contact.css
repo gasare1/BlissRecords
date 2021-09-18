@@ -1,8 +1,4 @@
-.card {
-    width: 500px;
-    max-width: 100%;
-    
-  }
+
 .contactbackground{
   background: no-repeat center center fixed; 
   background-image: url(../../Images/contactbackground.jpg);
@@ -11,5 +7,6 @@
   -o-background-size: cover;
   background-size: cover;
   height: 900px;
+  overflow: hidden;
   
 }

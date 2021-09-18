@@ -4,7 +4,7 @@ export const Home = styled.div`
 margin-top:40px;
 width:100%;
 z-index:1;
-
+overflow:hidden;
 
 @media screen and(max-width:1080px){
  display:block;
@@ -21,7 +21,7 @@ justify-content:center;
 flex-direction:'row';
 flex-wrap:wrap;
 float:center;
-
+overflow:hidden;
 
 @media screen and(max-width:760px){
 
@@ -35,7 +35,7 @@ justify-content: 'center';
 align-items: 'cemter'; 
 display: 'flex'; 
 flex-direction: 'row';
-
+overflow:hidden;
 @media screen and(max-width:960px){
     display:block;
     flex-direction:column;

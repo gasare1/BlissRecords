@@ -10,6 +10,7 @@ background-repeat: no-repeat;
 width: 100vw;
 height: 100vh;
 object-fit: cover;
+overflow:hidden;
 `
 export const MailText = styled.h1`
 color:#000;

@@ -123,7 +123,7 @@ color:
 export const BurgerIcon = styled.div`
 position:absolute;
 z-index:1;
-float:right;
+float:left;
 padding-bottom:30px;
 cursor: pointer;
 font-size:1.4rem;
@@ -167,7 +167,7 @@ export const MenuButton = styled(Link)`
 display:flex;
 justify-content:center;
 align-items:center;
-margin:20px;
+margin:30px;
 color:white;
 
 `

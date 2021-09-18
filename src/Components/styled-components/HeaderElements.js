@@ -29,10 +29,10 @@ cursor: pointer;
     text-align:center;
     display:flex;
     margin:auto;
+    margin-right:20px;
     margin-top:15%;
   }
   @media (max-width: 1480px) {
-    margin-left:70px;
     margin-top:60px;
   
   }
@@ -48,7 +48,7 @@ align-items:center;
 display:flex;
 @media (max-width: 1480px) {
 
-    margin-left:200px;
+    margin-left:160px;
   
   }
 

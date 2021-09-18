@@ -78,12 +78,14 @@ const Header = () => {
       >
         <Collapse isOpen={isOpen} navbar>
           <CgMenuRight className="nav-toggler" onClick={toggle} />
-
+          <NavLogo />
           <NavItem>
             <Container>
-              <NavLogo />
+              
             </Container>
+            
             <NavMenu>
+                
               <NavLinks>
                 <div class="container">
                   <Link to="home">

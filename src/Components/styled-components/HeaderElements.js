@@ -21,34 +21,28 @@ height: 50px;
 background-position: 50% 50%;
 background-repeat:   no-repeat;
 background-size:     cover;
-margin-left: 45rem;
-margin-top:50px;
 cursor: pointer;
 @media (max-width: 1080px) {
     justify-content:center;
     text-align:center;
     display:flex;
     margin:auto;
-    margin-right:20px;
-    margin-top:15%;
   }
-  @media (max-width: 1480px) {
-    margin-top:60px;
-  
-  }
+
 `
 
 export const NavMenu = styled.div`
-margin-top:40px;
+
 
 `
 export const NavItem = styled.ul`
 justify-content:center;
 align-items:center;
 display:flex;
-@media (max-width: 1480px) {
+margin-left:70px;
+@media (max-width: 3080px) {
 
-    margin-left:160px;
+    margin-left:200px;
   
   }
 
@@ -56,9 +50,7 @@ display:flex;
 
 `
 export const NavLinks = styled.div`
-margin-left:50px;
 text-decoration:none;
-margin:0px;
 font-size:20px;
 font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 color:white;
@@ -67,9 +59,5 @@ color:white;
 @media (max-width: 768px) {
     display:none;
   }
-  @media (max-width: 1480px) {
- 
-    
-  
-  }
+
 `

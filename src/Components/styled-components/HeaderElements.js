@@ -32,7 +32,7 @@ cursor: pointer;
     margin-top:15%;
   }
   @media (max-width: 1480px) {
-    margin-left:40px;
+    margin-left:70px;
     margin-top:60px;
   
   }
@@ -48,7 +48,7 @@ align-items:center;
 display:flex;
 @media (max-width: 1480px) {
     max-width:900px;
-    margin-left:50px;
+    margin-left:200px;
   
   }
 

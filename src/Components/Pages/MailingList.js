@@ -3,7 +3,7 @@ import { MailingHP, MailText } from "../styled-components/mailingelements";
 import { TextField, Button } from "@material-ui/core";
 import "../styled-components/maillist.css";
 import { makeStyles } from "@material-ui/core/styles";
-
+import image from '../../Images/mailist.jpg'
 const useStyles = makeStyles({
   root: {
     "& .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline": {
@@ -39,7 +39,16 @@ const useStyles = makeStyles({
 export default function MailingList() {
   const classes = useStyles();
   return (
-    <MailingHP id="maillist">
+    <MailingHP id="maillist"
+    className="contactbackground"
+    style={{
+      justifyContent: "center",
+      textAlign: "center",
+      alignItems: "center",
+      display: "flex",
+      backgroundImage: `url(${image})`,
+      color: "white",
+    }}>
       <MailText style={{ marginTop: "100px" }}>
         <h1>BE THE FIRST TO KNOW ABOUT EXCLUSIVE ATLANTIC RECORDS UPDATES</h1>
         <TextField

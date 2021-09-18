@@ -1,0 +1,18 @@
+.countdown-wrapper {
+  
+}
+.shadow1{
+    width: 10rem;
+  }
+@media (max-width: 1080px){
+    
+    .shadow1{
+      width: 10rem;
+    }
+    
+  }
+  @media (max-width: 900px) {
+    .shadow{
+        width: 500px;
+    }
+  }

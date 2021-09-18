@@ -23,6 +23,7 @@ const Contact = () => {
         display: "flex",
         backgroundImage: `url(${image1})`,
         color: "white",
+        
       }}
     >
       <MDBCol md="4">

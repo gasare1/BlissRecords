@@ -55,12 +55,19 @@ class Countdown extends React.Component {
     }
 
     return (
-      
-      <div>
+      <div style={{marginTop:'40px'}}>
         <MDBCard
-          style={{ maxWidth: "500rem", margin: "20px",justifyContent:'center',alignItems: 'center',display:'flex',maxHeight:'800px',marginTop:'70px' }}
+          style={{
+            maxWidth: "500rem",
+            margin: "20px",
+            justifyContent: "center",
+            alignItems: "center",
+            display: "flex",
+            maxHeight: "800px",
+            marginTop: "70px",
+          }}
           className="shadow bottom"
-          id='shadow'
+          id="shadow"
           data-aos="fade-up"
           data-aos-duration="3000"
         >
@@ -83,68 +90,72 @@ class Countdown extends React.Component {
             </a>
           </MDBRipple>
           <MDBCardBody>
-            <MDBCardTitle> Jador: Mansa</MDBCardTitle>
-            <AudioPlayer
-              style={{width:'23.4rem'}}
-              id='shadow'
+            <MDBCardTitle style={{ fontFamily:'Lato, sans-serif'}}> Jador: Mansa</MDBCardTitle>
+          
+          </MDBCardBody>
+          <h1 style={{ color: "black", fontFamily: "Grechen Fuemen, cursive" }}>
+            Countdown to song Release
+          </h1>
+          <div className="countdown-wrapper">
+            {days && (
+              <div className="countdown-item" style={{ marginTop: "40px" }}>
+                <SVGCircle
+                  radius={daysRadius}
+                  style={{
+                    fontSize: "20px",
+                    fontWeight: "bolder",
+                    marginTop: "20px",
+                  }}
+                />
+
+                <span
+                  style={{
+                    fontSize: "40px",
+                    fontWeight: "bolder",
+                    color: "red",
+                    fontFamily: "Grechen Fuemen, cursive",
+                  }}
+                >
+                  {" "}
+                  {days} days
+                </span>
+              </div>
+            )}
+            {hours && (
+              <div className="countdown-item1">
+                <SVGCircle1 radius={hoursRadius} style={{ color: "red" }} />
+
+                <span
+                  style={{
+                    fontSize: "40px",
+                    fontWeight: "bolder",
+                    color: "gold",
+                    fontFamily: "Grechen Fuemen, cursive",
+                  }}
+                >
+                  {hours} hours
+                </span>
+              </div>
+            )}
+          </div>
+          <AudioPlayer
+              style={{marginTop:'-40px'}}
+              id="shadow"
               src={mansa}
               onPlay={(e) => console.log("onPlay")}
               // other props here
             />
-          </MDBCardBody>
-          <h1 style={{ color: "black" }}>Countdown to song Release</h1>
-          <div className="countdown-wrapper">
-          {days && (
-            <div className="countdown-item" style={{ marginTop: "40px" }}>
-              <SVGCircle
-                radius={daysRadius}
-                style={{
-                  fontSize: "20px",
-                  fontWeight: "bolder",
-                  marginTop: "20px",
-                }}
-              />
-
-              <span
-                style={{ fontSize: "40px", fontWeight: "bolder", color: "red" }}
-              >
-                {" "}
-                {days} days
-              </span>
-            </div>
-          )}
-          {hours && (
-            <div className="countdown-item1">
-              <SVGCircle1 radius={hoursRadius} style={{ color: "red" }} />
-
-              <span
-                style={{
-                  fontSize: "40px",
-                  fontWeight: "bolder",
-                  color: "gold",
-                }}
-              >
-                {hours} hours
-              </span>
-            </div>
-          )}
-         
-         
-        </div>
         </MDBCard>
-        <div
-        className="countdown-wrapper"
-        style={{
-          background: `url(${image})`,
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-        }}>
         
-
-    
+        <div
+          className="countdown-wrapper"
+          style={{
+            background: `url(${image})`,
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+          }}
+        ></div>
       </div>
-      </div>
-      
     );
   }
 }

@@ -63,7 +63,8 @@ class Countdown extends React.Component {
             justifyContent: "center",
             alignItems: "center",
             display: "flex",
-            maxHeight: "800px",
+            maxHeight: "100%",
+            width:'100%',
             marginTop: "70px",
           }}
           className="shadow bottom"

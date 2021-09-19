@@ -4,8 +4,6 @@ import { Link } from 'react-router-dom'
 
 
 export const Navbar = styled.div`
-
- // or whatever you have
 z-index: 1;
 
 
@@ -22,7 +20,7 @@ cursor: pointer;
     justify-content:center;
     text-align:center;
     display:flex;
-    margin:auto;
+   
   }
 
 `
@@ -36,11 +34,6 @@ justify-content:center;
 align-items:center;
 display:flex;
 margin-left:70px;
-@media (max-width: 3080px) {
-
-    margin-left:200px;
-  
-  }
 
 
 

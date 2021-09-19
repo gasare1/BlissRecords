@@ -72,7 +72,7 @@ const Header = () => {
           backgroundColor: navBackground ? "black" : "transparent",
           position: "-webkit-sticky",
           position: "sticky",
-          top: "0",width:'152.7vh'
+          top: "0",width:'100%',height:'90px',marginBottom:'0px',display:'inline-block'
         }}
       >
         <Collapse isOpen={isOpen} navbar>

@@ -1,82 +1,126 @@
-import React from "react";
-import {
-  MDBContainer,
-  MDBRow,
-  MDBCol,
-  MDBBtn,
-  MDBIcon,
-  MDBInput,
-} from "mdbreact";
-import image1 from "../../Images/contactbackground.jpg";
-import "../styled-components/contact.css";
-import "@fortawesome/fontawesome-free/css/all.min.css";
+import React, { Component, useState } from "react";
+import axios from "axios";
+import { Form, Button, Modal, Row, Col } from "react-bootstrap";
+import { Redirect } from "react-router-dom";
+import { BiUser } from "react-icons/bi";
+import { HiOutlineMail } from "react-icons/hi";
+import { FaPhone } from "react-icons/fa";
+import image from "../../Images/contactbackground.jpg";
+const Contact = (isOpen) => {
+  const [email, setEmail] = useState("");
+  const [phone, setphone] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [info, setinfo] = useState("");
+  const [redirect, setRedirect] = useState(false);
 
-const Contact = () => {
+  function refreshPage(){
+    window.location.reload();
+} 
+  const submit = async (e) => {
+    e.preventDefault()
+    await fetch(' http://127.0.0.1:5000/maillist', {
+        method: 'POST',
+        headers: {  "Content-Type": "application/json" },
+        body: JSON.stringify({
+
+            "email": email,
+            "firstname": firstName,
+            "lastname": lastName,
+           
+
+        })
+    });  
+
+
+    setRedirect(true);
+}
+if (redirect) {
+
+    return <Redirect to="contact" />;
+}
+
   return (
-    <MDBRow
-      id="contact"
-      className="contactbackground"
-      style={{
-        justifyContent: "center",
-        textAlign: "center",
-        alignItems: "center",
-        display: "flex",
-        backgroundImage: `url(${image1})`,
-        color: "white",overflow:'hidden',
-        
-      }}
-    >
-      <MDBCol md="4">
-        <form onSubmit='submit'>
-          <p className="h5 text-center mb-4">Write to us</p>
-          <div className="grey-text">
-            <MDBInput
-              label="Your name"
-              icon="user"
-              group
+    <div id="contact" style={{ height: "100vh" }}>
+      <Form
+        onSubmit={submit}
+        style={{
+          justifyContent: "center",
+          display: "flex",
+          alignItems: "center",alignContent:'center',
+          backgroundImage: `url(${image})`,
+          height: "100vh",
+        }}
+      >
+        <Row className="mb-1" >
+          <Form.Group className="mb-3" controlId="exampleForm.ControlInput1" >
+            <Form.Label>
+              First Name <BiUser />{" "}
+            </Form.Label>
+            <Form.Control
               type="text"
-              validate
-              error="wrong"
-              success="right"
+              placeholder="First Name"
+              required
+              onChange={(e) => setFirstName(e.target.value)}
             />
-            <MDBInput
-              label="Your email"
-              icon="envelope"
-              group
+          </Form.Group>
+          <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+            <Form.Label>
+              Last Name <BiUser />{" "}
+            </Form.Label>
+            <Form.Control
+              type="text"
+              placeholder="Last Name"
+              required
+              onChange={(e) => setLastName(e.target.value)}
+            />
+          </Form.Group>
+          <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+            <Form.Label>
+              Email Address <HiOutlineMail />
+            </Form.Label>
+            <Form.Control
               type="email"
-              validate
-              error="wrong"
-              success="right"
+              placeholder="name@example.com"
+              required
+              onChange={(e) => setEmail(e.target.value)}
             />
-            <MDBInput
-              label="Subject"
-              icon="tag"
-              group
-              type="text"
-              validate
-              error="wrong"
-              success="right"
+          </Form.Group>
+          <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+            <Form.Label>
+              Phone <FaPhone />{" "}
+            </Form.Label>
+            <Form.Control
+              type="phone"
+              placeholder="###-###-###"
+              required
+              onChange={(e) => setphone(e.target.value)}
             />
-            <MDBInput
-              type="textarea"
-              rows="2"
-              label="Your message"
-              icon="pencil-alt"
+          </Form.Group>
+          <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+            <Form.Label>Additional Information</Form.Label>
+            <Form.Control
+              as="textarea"
+              rows={3}
+              required
+              onChange={(e) => setinfo(e.target.value)}
             />
-          </div>
-          <div className="text-center">
-            <MDBBtn
-              outline
-              color="secondary"
-              style={{ color: "white", marginTop: "12px" }}
-            >
-              Send
-              <MDBIcon far icon="paper-plane" className="ml-1" />
-            </MDBBtn>
-          </div>
-        </form>
-      </MDBCol>
-    </MDBRow>
+          </Form.Group>
+          <Button
+          style={{width:'100px',marginLeft:'40px',marginTop:"100px",display:'inline-block'}}
+            variant="primary"
+            type="submit"
+            value="Submit"
+            onClick={refreshPage}
+          >
+            Submit
+          </Button>
+        </Row>
+
+          
+      </Form>
+      
+    </div>
   );
 };
 

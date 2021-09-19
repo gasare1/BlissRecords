@@ -51,7 +51,7 @@ export default function MailingList() {
         alignItems: "center",
         display: "flex",
         backgroundImage: `url(${image})`,
-        color: "white",
+        color: "white",overflow:'hidden'
       }}
     >
       <MailText style={{ marginTop: "100px" }}>

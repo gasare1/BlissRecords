@@ -5,7 +5,7 @@ export const Home = styled.div`
 `
 export const HomeBackground = styled.video`
 object-fit: cover;
-width: 101vw;
+width: 100%;
 height: 80vh;
 top: 0;
 margin-top:-90px;

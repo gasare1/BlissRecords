@@ -22,7 +22,7 @@ const Contact = () => {
         alignItems: "center",
         display: "flex",
         backgroundImage: `url(${image1})`,
-        color: "white",
+        color: "white",overflow:'hidden',
         
       }}
     >

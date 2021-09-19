@@ -9,6 +9,7 @@ overflow:hidden;
 @media screen and(max-width:1080px){
  display:block;
  flex-direction:column;
+ overflow:hidden;
 }
 
 
@@ -24,7 +25,7 @@ float:center;
 overflow:hidden;
 
 @media screen and(max-width:760px){
-
+    overflow:hidden;
  display:block;
  flex-direction:column;
 }
@@ -39,5 +40,6 @@ overflow:hidden;
 @media screen and(max-width:960px){
     display:block;
     flex-direction:column;
+    overflow:hidden;
 }
 `

@@ -6,6 +6,7 @@ import { BiUser } from "react-icons/bi";
 import { HiOutlineMail } from "react-icons/hi";
 import { FaPhone } from "react-icons/fa";
 import image from "../../Images/contactbackground.jpg";
+import 'bootstrap/dist/css/bootstrap.min.css';
 const Contact = (isOpen) => {
   const [email, setEmail] = useState("");
   const [phone, setphone] = useState("");
@@ -42,17 +43,30 @@ if (redirect) {
 
   return (
     <div id="contact" style={{ height: "100vh" }}>
+      
       <Form
         onSubmit={submit}
         style={{
           justifyContent: "center",
           display: "flex",
           alignItems: "center",alignContent:'center',
-          backgroundImage: `url(${image})`,
+          background:'black',
           height: "100vh",
         }}
       >
-        <Row className="mb-1" >
+        
+        <Row className="mb-0" style={{
+          justifyContent: "center",
+          display: "flex",
+          alignItems: "center",alignContent:'center',
+          backgroundImage: `url(${image})`,
+          height: "60vh",color:'white',width:'50vw'
+        }} >
+          <h1 style={{
+          justifyContent: "center",fontFamily:'monospace',
+          display: "flex",
+          alignItems: "center",alignContent:'center'
+        }} >CONTACT US</h1>
           <Form.Group className="mb-3" controlId="exampleForm.ControlInput1" >
             <Form.Label>
               First Name <BiUser />{" "}

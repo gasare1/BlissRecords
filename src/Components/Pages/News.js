@@ -7,7 +7,7 @@ import {
   MDBIcon,
   MDBInput,
 } from "mdbreact";
-import image1 from "../../Images/newsback.jpg";
+import image1 from "../../Images/mansa3.jpeg";
 import "../styled-components/contact.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import { CountdownCircleTimer } from "react-countdown-circle-timer";
@@ -56,7 +56,7 @@ const News = () => {
         alignItems: "center",
         display: "flex",
         backgroundImage: `url(${image1})`,
-        color: "black",width:'100vw'
+        color: "black",width:'99.75vw'
       }}
     >
       <MDBCol md="4">

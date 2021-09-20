@@ -56,7 +56,7 @@ const News = () => {
         alignItems: "center",
         display: "flex",
         backgroundImage: `url(${image1})`,
-        color: "black",
+        color: "black",width:'100vw'
       }}
     >
       <MDBCol md="4">

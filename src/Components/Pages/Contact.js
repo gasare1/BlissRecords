@@ -121,7 +121,7 @@ if (redirect) {
             />
           </Form.Group>
           <Button
-          style={{width:'auto',marginLeft:'40px',marginTop:"100px",display:'inline-block'}}
+          style={{width:'auto',marginLeft:'0px',marginTop:"100px",display:'inline-block'}}
             variant="primary"
             type="submit"
             value="Submit"

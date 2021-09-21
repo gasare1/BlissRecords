@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const Home = styled.div`
 margin-top:40px;
-width:100%;
 z-index:1;
 overflow:hidden;
 

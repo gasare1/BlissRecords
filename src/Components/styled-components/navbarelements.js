@@ -4,50 +4,8 @@ import { FaTimes} from 'react-icons/fa'
 import { CgMenuLeft } from 'react-icons/cg'
 const heightOfMenu = "700px"
 
-export const NavItem = styled.ul`
-color:#fff;
-text-align:right;
-float:right;
-margin:1px;
-
-`
-export const NavLink = styled.div`
-color:#000;
-float:right;
-cursor: pointer;
-text-decoration:none;
-padding-bottom:30px;
-font-family: 'Mukta', sans-serif;;
-font-size:20px;
-justify-content:space-between;
-position: sticky;
-
-&:hover{color:#fff}
-
-@media screen and (max-width:1024px){
-    display:none;
-    
-}
 
 
-`
-export const Navbar = styled.div`
-
-position: -webkit-sticky;
-position:sticky;
-top:0;
-z-index:5;
-margin-bottom:-10rem;
-
-@media screen and (max-width:1024px){
-  width:100%
-  
-}
-&.active {
-    background:#000;
-  }
-
-`
 export const Nav = styled.div`
 height:20px;
 display:flex;

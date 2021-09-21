@@ -5,8 +5,7 @@ import { Link } from 'react-router-dom'
 
 export const Navbar = styled.div`
 z-index: 1;
-
-
+overflow: hidden;
 `
 export const NavLogo = styled.div`
 background-image:url(${image1});
@@ -15,6 +14,7 @@ height: 50px;
 background-position: 50% 50%;
 background-repeat:   no-repeat;
 background-size:     cover;
+
 cursor: pointer;
 @media (max-width: 1080px) {
     justify-content:center;
@@ -33,7 +33,7 @@ export const NavItem = styled.ul`
 justify-content:center;
 align-items:center;
 display:flex;
-margin-left:70px;
+margin-left:0px;
 
 
 
@@ -43,6 +43,7 @@ text-decoration:none;
 font-size:20px;
 font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 color:white;
+margin-right:40px;
 
 
 @media (max-width: 768px) {

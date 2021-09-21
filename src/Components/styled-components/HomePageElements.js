@@ -5,11 +5,10 @@ export const Home = styled.div`
 `
 export const HomeBackground = styled.video`
 object-fit: cover;
-width: 100%;
 height: 80vh;
 top: 0;
 margin-top:-90px;
-left: 0;
+width:'200vw';
 `
 export const HomeBg = styled.h1`
 color:white;

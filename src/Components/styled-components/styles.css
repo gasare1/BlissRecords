@@ -4,8 +4,7 @@
     font-family: sans-serif;
     text-align: center;
     padding-top: 40px;
-    height: 850px;
-    width: 100%;
+    height: 100vh;
    
     
   }
@@ -19,4 +18,7 @@
     font-size: 32px;
     
   }
-  
+.news{
+  overflow-y: scroll;
+  overflow-x: hidden;
+}

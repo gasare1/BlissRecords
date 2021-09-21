@@ -7,6 +7,7 @@ import axios from "axios";
 import image from "../../Images/mailist.jpg";
 import Scrolltext from "./Scrolltext";
 import { Redirect } from "react-router-dom";
+import Footer from "../Footer/Footer";
 const useStyles = makeStyles({
   root: {
     "& .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline": {
@@ -124,5 +125,6 @@ export default function MailingList() {
       </MailText>
       </form>
     </MailingHP>
+    
   );
 }

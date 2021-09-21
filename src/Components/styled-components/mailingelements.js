@@ -7,7 +7,6 @@ export const MailingHP = styled.div`
 background-position:center;
 background-size: cover;
 background-repeat: no-repeat;
-width: 100%;
 height: 100vh;
 object-fit: cover;
 overflow:hidden;

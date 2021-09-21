@@ -10,7 +10,7 @@ import {
 import { HomeBg } from "../styled-components/HomePageElements";
 import { AiFillFacebook, AiOutlineInstagram } from "react-icons/ai";
 import { GrTwitter } from "react-icons/gr";
-import AnchorLink from 'react-anchor-link-smooth-scroll'
+import AnchorLink from "react-anchor-link-smooth-scroll";
 import {
   NavLink,
   Nav,
@@ -63,18 +63,20 @@ const Header = () => {
     setRegisterOpen(false);
   };
   return (
-    <>
-      <Navbar
-        expand="sm"
-        fixed="top"
-        style={{
-          transition: "1s ease",
-          backgroundColor: navBackground ? "black" : "transparent",
-          position: "-webkit-sticky",
-          position: "sticky",
-          top: "0",width:'100%',height:'90px',marginBottom:'0px',display:'inline-block'
-        }}
-      >
+    <div
+      expand="sm"
+      fixed="top"
+      style={{
+        transition: "1s ease",
+        backgroundColor: navBackground ? "black" : "transparent",
+        position: "-webkit-sticky",
+        position: "sticky",
+        top: "0",
+        height: "90px",
+        width: "100%", zIndex:'200'
+      }}
+    >
+      <Navbar>
         <Collapse isOpen={isOpen} navbar>
           <CgMenuRight className="nav-toggler" onClick={toggle} />
           <NavLogo />
@@ -86,7 +88,12 @@ const Header = () => {
                 <div class="container">
                   <Link to="home" duration={1000}>
                     <div class="btn">
-                      <AnchorLink  style={{ color: "white", fontSize: "12px" }} to="home" >HOME</AnchorLink>
+                      <AnchorLink
+                        style={{ color: "white", fontSize: "12px" }}
+                        to="home"
+                      >
+                        HOME
+                      </AnchorLink>
                     </div>
                   </Link>
                 </div>
@@ -95,13 +102,14 @@ const Header = () => {
             <NavMenu>
               <NavLinks>
                 <div class="container">
-                  <Link
-                    to="news"
-                    
-                  >
+                  <Link to="news">
                     <div class="btn">
-                      
-                      <AnchorLink  style={{ color: "white", fontSize: "12px" }} to="news" >NEWS</AnchorLink>
+                      <AnchorLink
+                        style={{ color: "white", fontSize: "12px" }}
+                        to="news"
+                      >
+                        NEWS
+                      </AnchorLink>
                     </div>
                   </Link>
                 </div>
@@ -112,7 +120,12 @@ const Header = () => {
                 <div class="container">
                   <Link to="contact" duration={1000}>
                     <div class="btn">
-                    <AnchorLink  style={{ color: "white", fontSize: "12px" }} to="contact" >CONTACT</AnchorLink>
+                      <AnchorLink
+                        style={{ color: "white", fontSize: "12px" }}
+                        to="contact"
+                      >
+                        CONTACT
+                      </AnchorLink>
                     </div>
                   </Link>
                 </div>
@@ -123,7 +136,12 @@ const Header = () => {
                 <div class="container">
                   <Link to="maillist" duration={1000}>
                     <div class="btn">
-                    <AnchorLink  style={{ color: "white", fontSize: "12px" }} to="maillist" >SIGNUP</AnchorLink>
+                      <AnchorLink
+                        style={{ color: "white", fontSize: "12px" }}
+                        to="maillist"
+                      >
+                        SIGNUP
+                      </AnchorLink>
                     </div>
                   </Link>
                 </div>
@@ -236,7 +254,7 @@ const Header = () => {
           </Wrapper>
         </Collapse>
       </Navbar>
-    </>
+    </div>
   );
 };
 

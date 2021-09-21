@@ -43,7 +43,6 @@ text-decoration:none;
 font-size:20px;
 font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 color:white;
-margin-right:40px;
 
 
 @media (max-width: 768px) {

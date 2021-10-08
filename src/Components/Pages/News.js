@@ -13,6 +13,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import { CountdownCircleTimer } from "react-countdown-circle-timer";
 import "../styled-components/styles.css";
 import Countdown from "./Timer";
+import Countdown1 from "./Timer";
 const News = () => {
   const minuteSeconds = 60;
   const hourSeconds = 3600;
@@ -60,13 +61,13 @@ const News = () => {
       }}
     >
       <MDBCol md="4">
-        <>
-          <Countdown
+
+          <Countdown1
             timeTillDate="10 08 2021, 12:00 am"
             timeFormat="MM DD YYYY, h:mm a"
             style={{alignItems:'center',justifyContent:'center',display:'flex',flexDirection:'row',height:'200px'}}
           />
-        </>
+
       </MDBCol>
     </MDBRow>
   );

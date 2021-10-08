@@ -14,7 +14,8 @@ import {
   MDBBtn,
   MDBRipple,
 } from "mdb-react-ui-kit";
-class Countdown extends React.Component {
+import Countdown from 'react-countdown';
+class Countdown1 extends React.Component {
   state = {
     days: undefined,
     hours: undefined,
@@ -45,10 +46,10 @@ class Countdown extends React.Component {
 
   render() {
     const { days, hours, minutes, seconds } = this.state;
-    const daysRadius = mapNumber(days, 30, 0, 0, 360);
-    const hoursRadius = mapNumber(hours, 24, 0, 0, 360);
-    const minutesRadius = mapNumber(minutes, 60, 0, 0, 360);
-    const secondsRadius = mapNumber(seconds, 60, 0, 0, 360);
+    const daysRadius = mapNumber(days, 0, 0, 0, 360);
+    const hoursRadius = mapNumber(hours, 0, 0, 0, 360);
+    const minutesRadius = mapNumber(minutes, 0, 0, 0, 360);
+    const secondsRadius = mapNumber(seconds, 0, 0, 0, 360);
 
     if (!seconds) {
       return null;
@@ -109,7 +110,7 @@ class Countdown extends React.Component {
                   }}
                 />
 
-                <span
+                <span 
                   style={{
                     fontSize: "20px",
                     fontWeight: "bolder",
@@ -118,7 +119,7 @@ class Countdown extends React.Component {
                   }}
                 >
                   {" "}
-                  {days} :{hours} :{minutes} :{seconds}
+                  00 :00 :{minutes} :{seconds} 
                 </span>
               </div>
             )}
@@ -187,12 +188,6 @@ const SVGCircle3 = ({ radius }) => (
   </svg>
 );
 
-<Countdown
-  timeTillDate="10 08 2021, 12:00 am"
-  timeFormat="MM DD YYYY, h:mm a"
-/>;
-
-// From stackoverflow: https://stackoverflow.com/questions/5736398/how-to-calculate-the-svg-path-for-an-arc-of-a-circle
 function polarToCartesian(centerX, centerY, radius, angleInDegrees) {
   var angleInRadians = ((angleInDegrees - 90) * Math.PI) / 180.0;
 
@@ -232,4 +227,4 @@ function mapNumber(number, in_min, in_max, out_min, out_max) {
   );
 }
 
-export default Countdown;
+export default Countdown1;

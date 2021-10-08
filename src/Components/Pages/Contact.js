@@ -50,7 +50,7 @@ if (redirect) {
           justifyContent: "center",
           display: "flex",
           alignItems: "center",alignContent:'center',
-          background:'black',
+          background:'white',
           height: "100vh",
         }}
       >

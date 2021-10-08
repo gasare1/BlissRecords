@@ -89,7 +89,7 @@ export default function MailingList() {
     >
       <form onSubmit={submit}>
       <MailText style={{ marginTop: "100px" }}>
-        <h1>BE THE FIRST TO KNOW ABOUT EXCLUSIVE ATLANTIC RECORDS UPDATES</h1>
+        <h1>BE THE FIRST TO KNOW ABOUT EXCLUSIVE BLISS RECORDS UPDATES</h1>
         <TextField
           id="firstfield"
           style={{

@@ -45,9 +45,9 @@ class Countdown extends React.Component {
 
   render() {
     const { days, hours, minutes, seconds } = this.state;
-    const daysRadius = mapNumber(days, 30, 0, 0, 360);
-    const hoursRadius = mapNumber(hours, 24, 0, 0, 360);
-    const minutesRadius = mapNumber(minutes, 60, 0, 0, 360);
+    const daysRadius = mapNumber(days, , 0, 0, 360);
+    const hoursRadius = mapNumber(hours, 2, 0, 0, 360);
+    const minutesRadius = mapNumber(minutes, 8, 0, 0, 360);
     const secondsRadius = mapNumber(seconds, 60, 0, 0, 360);
 
     if (!seconds) {

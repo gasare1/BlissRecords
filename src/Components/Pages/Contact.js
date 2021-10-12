@@ -5,7 +5,7 @@ import { Redirect } from "react-router-dom";
 import { BiUser } from "react-icons/bi";
 import { HiOutlineMail } from "react-icons/hi";
 import { FaPhone } from "react-icons/fa";
-import image from "../../Images/contactbackground.jpg";
+import image from "../../Images/BlissLogo.jpeg";
 import 'bootstrap/dist/css/bootstrap.min.css';
 const Contact = (isOpen) => {
   const [email, setEmail] = useState("");
@@ -51,7 +51,7 @@ if (redirect) {
           display: "flex",
           alignItems: "center",alignContent:'center',
           background:'white',
-          height: "100vh",
+          height: "100vh",  backgroundColor: "black",backgroundRepeat:'no-repeat center center fixed',backgroundSize:'cover'
         }}
       >
         
@@ -59,7 +59,7 @@ if (redirect) {
           justifyContent: "center",
           display: "flex",
           alignItems: "center",alignContent:'center',
-          backgroundImage: `url(${image})`,
+        
           height: "60vh",color:'white',width:'50vw'
         }} >
           <h1 style={{

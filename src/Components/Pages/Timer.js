@@ -88,7 +88,7 @@ class Countdown1 extends React.Component {
           <MDBCardBody>
             <MDBCardTitle style={{ fontFamily: "Lato, sans-serif" }}>
               {" "}
-              Jador: Mansa
+              Mansa:Jador
             </MDBCardTitle>
             Avilable on all platforms!!
             <div style={{ justifyContent:'space-between',fontSize:'50px' }} >

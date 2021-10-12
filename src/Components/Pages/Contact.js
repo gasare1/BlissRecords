@@ -7,6 +7,7 @@ import { HiOutlineMail } from "react-icons/hi";
 import { FaPhone } from "react-icons/fa";
 import image from "../../Images/BlissLogo.jpeg";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../styled-components/contact.css'
 const Contact = (isOpen) => {
   const [email, setEmail] = useState("");
   const [phone, setphone] = useState("");
@@ -55,12 +56,12 @@ if (redirect) {
         }}
       >
         
-        <Row className="mb-0" style={{
+        <Row className="mb-0" id="contact1" style={{
           justifyContent: "center",
           display: "flex",
           alignItems: "center",alignContent:'center',
         
-          height: "60vh",color:'white',width:'50vw'
+          height: "60vh",color:'white',width:'100%'
         }} >
           <h1 style={{
           justifyContent: "center",fontFamily:'monospace',

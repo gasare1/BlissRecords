@@ -64,7 +64,7 @@ const News = () => {
         width: "100.6%",
       }}
     >
-      <MDBCol md="4">
+      <MDBCol md="5">
         <Countdown1/>
         <ReactJkMusicPlayer
           audioLists={audioLists}

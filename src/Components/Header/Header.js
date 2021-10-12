@@ -183,10 +183,7 @@ const Header = () => {
                       <span style={{ color: "white", fontSize: "20px" }}>
                         <a
                           classNae="instagram"
-                          style={{
-                            background:
-                              " radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)",
-                          }}
+                          style={{ color: "white", fontSize: "20px" }}
                           href="https://instagram.com"
                         >
                           <AiOutlineInstagram />

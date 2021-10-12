@@ -10632,10 +10632,10 @@ react-is@^16.12.0, react-is@^16.3.2, react-is@^16.6.0, react-is@^16.6.3, react-i
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.2.tgz#e691d4a8e9c789365655539ab372762b0efb54f0"
   integrity sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==
 
-react-jinke-music-player@^4.24.1:
-  version "4.24.1"
-  resolved "https://registry.yarnpkg.com/react-jinke-music-player/-/react-jinke-music-player-4.24.1.tgz#b004ca26927e096bb623d78ae01d71243feda523"
-  integrity sha512-U/qWu7VbTeosJm8ZYd6nEi9UCjG+yivAO/pQxIYK0qjX4oPH23Dyb8yo/5z2PcOCcxV6VGM8KVj8OysLKI+1wQ==
+react-jinke-music-player@^4.24.2:
+  version "4.24.2"
+  resolved "https://registry.yarnpkg.com/react-jinke-music-player/-/react-jinke-music-player-4.24.2.tgz#e14fde2353cf2d41f22f4725f846441506c39e62"
+  integrity sha512-E1ipg12CpIF2C54vnAD7Q14yr4UiwbQJo60DoF9dkU0gWRLgo60oLhjw4mRxlbERurkeR/9Ml1a9hUnIa8el/Q==
   dependencies:
     "@react-icons/all-files" "^4.1.0"
     classnames "^2.3.1"

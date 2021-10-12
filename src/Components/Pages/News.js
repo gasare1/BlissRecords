@@ -1,4 +1,4 @@
-import React from "react";
+import React, { setState } from "react";
 import {
   MDBContainer,
   MDBRow,
@@ -14,6 +14,9 @@ import { CountdownCircleTimer } from "react-countdown-circle-timer";
 import "../styled-components/styles.css";
 import Countdown from "./Timer";
 import Countdown1 from "./Timer";
+import ReactJkMusicPlayer from "react-jinke-music-player";
+import "react-jinke-music-player/assets/index.css";
+import audioLists from "./musicdb";
 const News = () => {
   const minuteSeconds = 60;
   const hourSeconds = 3600;
@@ -57,17 +60,22 @@ const News = () => {
         alignItems: "center",
         display: "flex",
         backgroundImage: `url(${image1})`,
-        color: "black",width:'100.6%'
+        color: "black",
+        width: "100.6%",
       }}
     >
       <MDBCol md="4">
-
-          <Countdown1
-            timeTillDate="10 08 2021, 12:00 am"
-            timeFormat="MM DD YYYY, h:mm a"
-            style={{alignItems:'center',justifyContent:'center',display:'flex',flexDirection:'row',height:'200px'}}
-          />
-
+        <Countdown1/>
+        <ReactJkMusicPlayer
+          audioLists={audioLists}
+          showMediaSession
+          autoPlay={true}
+          toggleMode={true}
+          drag={true}
+          showPlay={true}
+          showDownload={false}
+          mode="full"
+        />
       </MDBCol>
     </MDBRow>
   );

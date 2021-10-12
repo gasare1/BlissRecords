@@ -4,6 +4,8 @@ import image from "../../Images/Mansa.jpg";
 import mansa from "../../Audio/Jador--Mansa.mp3";
 import "react-h5-audio-player/lib/styles.css";
 import AudioPlayer from "react-h5-audio-player";
+import { AiOutlineYoutube, AiOutlineApple } from "react-icons/ai";
+import { FaSpotify, FaApple, FaYoutube } from "react-icons/fa";
 import "../styled-components/timer.css";
 import {
   MDBCard,
@@ -14,7 +16,9 @@ import {
   MDBBtn,
   MDBRipple,
 } from "mdb-react-ui-kit";
-import Countdown from 'react-countdown';
+import Countdown from "react-countdown";
+import ReactJkMusicPlayer from "react-jinke-music-player";
+import "react-jinke-music-player/assets/index.css";
 class Countdown1 extends React.Component {
   state = {
     days: undefined,
@@ -45,18 +49,8 @@ class Countdown1 extends React.Component {
   }
 
   render() {
-    const { days, hours, minutes, seconds } = this.state;
-    const daysRadius = mapNumber(days, 0, 0, 0, 360);
-    const hoursRadius = mapNumber(hours, 0, 0, 0, 360);
-    const minutesRadius = mapNumber(minutes, 0, 0, 0, 360);
-    const secondsRadius = mapNumber(seconds, 0, 0, 0, 360);
-
-    if (!seconds) {
-      return null;
-    }
-
     return (
-      <div style={{marginTop:'40px',marginRight:'60px'}}>
+      <div style={{ marginTop: "40px", marginRight: "60px" }}>
         <MDBCard
           style={{
             maxWidth: "100rem",
@@ -65,7 +59,7 @@ class Countdown1 extends React.Component {
             alignItems: "center",
             display: "flex",
             maxHeight: "100%",
-            width:'100%',
+            width: "100%",
             marginTop: "70px",
           }}
           className="shadow bottom"
@@ -92,139 +86,36 @@ class Countdown1 extends React.Component {
             </a>
           </MDBRipple>
           <MDBCardBody>
-            <MDBCardTitle style={{ fontFamily:'Lato, sans-serif'}}> Jador: Mansa</MDBCardTitle>
-          
-          </MDBCardBody>
-          <h1 style={{ color: "black", fontFamily: "Grechen Fuemen, cursive" }}>
-            Countdown to song Release
-          </h1>
-          <div className="countdown-wrapper">
-            {days && (
-              <div className="countdown-item" style={{ marginTop: "40px",justifyContent:'center',alignContent:'center',display:'flex',margin:'40px' }}>
-                <SVGCircle
-                  radius={daysRadius}
-                  style={{
-                    fontSize: "10px",
-                    fontWeight: "bolder",
-                    marginTop: "20px",
-                  }}
-                />
+            <MDBCardTitle style={{ fontFamily: "Lato, sans-serif" }}>
+              {" "}
+              Jador: Mansa
+            </MDBCardTitle>
+            Avilable on all platforms!!
+            <div style={{ justifyContent:'space-between',fontSize:'50px' }} >
+              <a
+                href="https://www.youtube.com/watch?v=v-NssrnFIxU&ab_channel=J%27ador"
+                target="_blank"
+              >
+                <FaYoutube style={{ color: "red",margin:"60px" }} />
+              </a>
 
-                <span 
-                  style={{
-                    fontSize: "20px",
-                    fontWeight: "bolder",
-                    color:'linear-gradient( 90.3deg,  rgba(255,255,255,1) 3%, rgba(235,158,98,1) 34.6%, rgba(177,10,10,1) 63.7%, rgba(0,0,0,1) 102% )',
-                    fontFamily: "Grechen Fuemen, cursive",
-                  }}
-                >
-                  {" "}
-                  00 :00 :{minutes} :{seconds} 
-                </span>
-              </div>
-            )}
-            
-          </div>
-          <AudioPlayer
-              style={{marginTop:'-40px'}}
-              id="shadow"
-              src={mansa}
-              onPlay={(e) => console.log("onPlay")}
-              // other props here
-            />
+              <a
+                href="https://music.apple.com/us/album/mansa/1584868772?i=1584868773"
+                target="_blank"
+              >
+                <FaApple style={{ color: "black",margin:"60px"  }} />
+              </a>
+              <a
+                href="https://open.spotify.com/album/7u1eazvSnGS3C2cQ8X3dIp?highlight=spotify:track:4Yr0wBwrAwrggUdU5j0MCT"
+                target="_blank"
+              >
+                <FaSpotify style={{ color: "green",margin:"60px"  }} />
+              </a>
+            </div>
+          </MDBCardBody>
         </MDBCard>
-        
-        <div
-          className="countdown-wrapper"
-          style={{
-            background: `url(${image})`,
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-          }}
-        ></div>
       </div>
     );
   }
 }
-
-const SVGCircle = ({ radius }) => (
-  <svg className="countdown-svg">
-    <path
-      fill="none"
-      stroke="#FF416C"
-      stroke-width="4"
-      d={describeArc(50, 50, 48, 0, radius)}
-    />
-  </svg>
-);
-const SVGCircle1 = ({ radius }) => (
-  <svg className="countdown-svg1">
-    <path
-      fill="none"
-      stroke="gold"
-      stroke-width="2"
-      d={describeArc(50, 50, 48, 0, radius)}
-    />
-  </svg>
-);
-const SVGCircle2 = ({ radius }) => (
-  <svg className="countdown-svg2">
-    <path
-      fill="none"
-      stroke="white"
-      stroke-width="4"
-      d={describeArc(50, 50, 48, 0, radius)}
-    />
-  </svg>
-);
-const SVGCircle3 = ({ radius }) => (
-  <svg className="countdown-svg3">
-    <path
-      fill="none"
-      stroke="green"
-      stroke-width="4"
-      d={describeArc(50, 50, 48, 0, radius)}
-    />
-  </svg>
-);
-
-function polarToCartesian(centerX, centerY, radius, angleInDegrees) {
-  var angleInRadians = ((angleInDegrees - 90) * Math.PI) / 180.0;
-
-  return {
-    x: centerX + radius * Math.cos(angleInRadians),
-    y: centerY + radius * Math.sin(angleInRadians),
-  };
-}
-
-function describeArc(x, y, radius, startAngle, endAngle) {
-  var start = polarToCartesian(x, y, radius, endAngle);
-  var end = polarToCartesian(x, y, radius, startAngle);
-
-  var largeArcFlag = endAngle - startAngle <= 180 ? "0" : "1";
-
-  var d = [
-    "M",
-    start.x,
-    start.y,
-    "A",
-    radius,
-    radius,
-    0,
-    largeArcFlag,
-    0,
-    end.x,
-    end.y,
-  ].join(" ");
-
-  return d;
-}
-
-// Stackoverflow: https://stackoverflow.com/questions/10756313/javascript-jquery-map-a-range-of-numbers-to-another-range-of-numbers
-function mapNumber(number, in_min, in_max, out_min, out_max) {
-  return (
-    ((number - in_min) * (out_max - out_min)) / (in_max - in_min) + out_min
-  );
-}
-
 export default Countdown1;

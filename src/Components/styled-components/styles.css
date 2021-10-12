@@ -8,9 +8,10 @@
    
     
   }
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 960px) {
     .News{
       flex-direction: column;
+      width: 100vw;
     }
   }
   

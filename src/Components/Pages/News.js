@@ -61,7 +61,7 @@ const News = () => {
         display: "flex",
         backgroundImage: `url(${image1})`,
         color: "black",
-        width: "100.6%",
+        width: "100.6%",height:'100%'
       }}
     >
       <MDBCol md="5">

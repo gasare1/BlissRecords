@@ -46,7 +46,7 @@ const Footer = () => {
             </FooterLink>
             <FooterLink href="#">
               <i className="fab fa-instagram">
-                <span style={{ marginLeft: "10px" }}>Instagram</span>
+                <a href="https://instagram.com/blissrecordsgh?utm_medium=copy_link" style={{ marginLeft: "10px",textDecoration:'none',color:'white' }}>Instagram</a>
               </i>
             </FooterLink>
             <FooterLink href="#">

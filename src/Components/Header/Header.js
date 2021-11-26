@@ -179,12 +179,12 @@ const Header = () => {
               <NavLinks>
                 <div class="container">
                   <div class="btn">
-                    <a href="https://www.instagram.com/" class="pull-left">
+                    <a href="https://instagram.com/blissrecordsgh?utm_medium=copy_link" class="pull-left">
                       <span style={{ color: "white", fontSize: "20px" }}>
                         <a
                           classNae="instagram"
                           style={{ color: "white", fontSize: "20px" }}
-                          href="https://instagram.com"
+                          href="https://instagram.com/blissrecordsgh?utm_medium=copy_link"
                         >
                           <AiOutlineInstagram />
                         </a>
